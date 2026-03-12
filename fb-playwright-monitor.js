@@ -92,6 +92,55 @@ async function cmdScrape(groupUrl, limit = 5) {
   await context.close();
 }
 
+async function scrapeOneTab(context, groupUrl, limit, coreScript) {
+  const page = await context.newPage();
+  const m = groupUrl.match(/\/groups\/([^/?#]+)/i);
+  const groupId = m ? m[1] : '';
+  try {
+    await page.goto(groupUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await sleep(4000);
+
+    const hasLoginForm = await page.locator('input[name="email"]').count();
+    if (hasLoginForm) {
+      return { success: false, groupUrl, groupId, error: 'Not logged in' };
+    }
+
+    await page.evaluate(coreScript);
+    const result = await page.evaluate(async ({ groupId, limit }) => {
+      return await window.__fbGroupExtractor({ groupId, limit });
+    }, { groupId, limit });
+
+    return { success: true, groupUrl, groupId, count: (result.posts || []).length, posts: result.posts || [] };
+  } catch (err) {
+    return { success: false, groupUrl, groupId, error: err.message };
+  } finally {
+    await page.close().catch(() => {});
+  }
+}
+
+async function cmdScrapeMulti(groupUrls, limit = 5, concurrency = 5) {
+  const context = await launchPersistent(false);
+  const coreScript = fs.readFileSync(CORE_EXTRACTOR_FILE, 'utf8');
+
+  // Process in batches to avoid overwhelming the browser
+  const results = [];
+  for (let i = 0; i < groupUrls.length; i += concurrency) {
+    const batch = groupUrls.slice(i, i + concurrency);
+    const batchResults = await Promise.all(
+      batch.map(url => scrapeOneTab(context, url, limit, coreScript))
+    );
+    results.push(...batchResults);
+    // Small pause between batches
+    if (i + concurrency < groupUrls.length) await sleep(2000);
+  }
+
+  await saveState(context);
+  const succeeded = results.filter(r => r.success).length;
+  const failed = results.filter(r => !r.success).length;
+  console.log(JSON.stringify({ success: true, total: results.length, succeeded, failed, results }, null, 2));
+  await context.close();
+}
+
 (async () => {
   const cmd = process.argv[2];
   if (cmd === 'login') return cmdLogin();
@@ -102,5 +151,14 @@ async function cmdScrape(groupUrl, limit = 5) {
     if (!url) throw new Error('Usage: node fb-playwright-monitor.js scrape <groupUrl> [limit]');
     return cmdScrape(url, limit);
   }
-  console.log('Usage: node fb-playwright-monitor.js <login|status|scrape>');
+  if (cmd === 'scrape-multi') {
+    // Usage: node fb-playwright-monitor.js scrape-multi <url1,url2,...> [limit] [concurrency]
+    const urlsArg = process.argv[3];
+    const limit = Number(process.argv[4] || '5');
+    const concurrency = Number(process.argv[5] || '5');
+    if (!urlsArg) throw new Error('Usage: node fb-playwright-monitor.js scrape-multi <url1,url2,...> [limit] [concurrency]');
+    const groupUrls = urlsArg.split(',').map(u => u.trim()).filter(Boolean);
+    return cmdScrapeMulti(groupUrls, limit, concurrency);
+  }
+  console.log('Usage: node fb-playwright-monitor.js <login|status|scrape|scrape-multi>');
 })();
