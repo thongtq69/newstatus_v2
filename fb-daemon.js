@@ -6,13 +6,23 @@ const ROOT = __dirname;
 const PROFILE_DIR = path.join(ROOT, '.pw-facebook-profile');
 const CORE_EXTRACTOR_FILE = path.join(ROOT, 'extract_group_posts_core.js');
 const RESULTS_DIR = path.join(ROOT, 'scrape-results');
-const STATE_FILE = path.join(ROOT, '.pw-facebook-storage.json');
+const COMMENTED_FILE = path.join(ROOT, 'commented-posts.json');
 
 // Config
-const CYCLE_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
-const TAB_TIMEOUT_MS = 30 * 1000; // 30s max per tab before killing
-const CONCURRENCY = 5; // tabs open at same time
+const CYCLE_INTERVAL_MS = 2 * 60 * 1000; // 2 minutes
+const TAB_TIMEOUT_MS = 30 * 1000;
+const CONCURRENCY = 5;
 const POST_LIMIT = 3;
+
+const COMMENT_TEXT = `Em nhận build trang web hoàn chỉnh ,Ib 2m vào việc , 45p có demo giao diện . 2 ngày bàn giao . Thanh toán sau nên bao uy tín chất lượng. Có hoá đơn chứng từ doanh nghiệp nếu cần ạ.`;
+
+// Groups that should get auto-comment (Tech/Web only)
+const COMMENT_GROUPS = new Set([
+  'toolwebapp', 'thietkewebvietnam', '1685891735047297', '362900488947380',
+  '606643771643699', '1104882584238051', 'congdongthietkewebsitegiare',
+  '1712169349298592', 'hoithietkewebsiteviet', '1998083910206781',
+  'n8n.automation'
+]);
 
 // All 17 groups
 const GROUPS = [
@@ -32,8 +42,62 @@ function log(msg) {
   fs.appendFileSync(path.join(ROOT, 'daemon.log'), line + '\n');
 }
 
-function groupUrl(groupId) {
-  return `https://www.facebook.com/groups/${groupId}/?sorting_setting=CHRONOLOGICAL`;
+function groupUrl(gid) {
+  return `https://www.facebook.com/groups/${gid}/?sorting_setting=CHRONOLOGICAL`;
+}
+
+// Load/save commented posts set
+function loadCommented() {
+  try {
+    const data = JSON.parse(fs.readFileSync(COMMENTED_FILE, 'utf8'));
+    return new Set(data);
+  } catch { return new Set(); }
+}
+
+function saveCommented(set) {
+  // Keep only last 5000 to avoid unbounded growth
+  const arr = [...set];
+  const trimmed = arr.slice(-5000);
+  fs.writeFileSync(COMMENTED_FILE, JSON.stringify(trimmed, null, 2), 'utf8');
+}
+
+async function commentOnPost(context, postUrl, coreScript) {
+  const page = await context.newPage();
+  try {
+    await page.goto(postUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
+    await sleep(3000);
+
+    // Find the comment box — try multiple selectors
+    // On single-post view, the comment box is usually [role="textbox"] inside the comment section
+    const commentBox = page.locator('[role="textbox"][aria-label*="bình luận"], [role="textbox"][aria-label*="comment"], [role="textbox"][aria-label*="Viết"]').first();
+    
+    const boxCount = await commentBox.count();
+    if (boxCount === 0) {
+      log(`    ⚠️ No comment box found on ${postUrl}`);
+      return false;
+    }
+
+    await commentBox.click();
+    await sleep(500);
+
+    // Use execCommand insertText for reliable Unicode input
+    await page.evaluate((text) => {
+      document.execCommand('insertText', false, text);
+    }, COMMENT_TEXT);
+    await sleep(500);
+
+    // Press Enter to submit
+    await commentBox.press('Enter');
+    await sleep(3000);
+
+    log(`    💬 Commented on ${postUrl}`);
+    return true;
+  } catch (err) {
+    log(`    ❌ Comment failed ${postUrl}: ${err.message}`);
+    return false;
+  } finally {
+    try { await page.close(); } catch {}
+  }
 }
 
 async function scrapeTab(context, groupId, coreScript) {
@@ -41,17 +105,14 @@ async function scrapeTab(context, groupId, coreScript) {
   const url = groupUrl(groupId);
   
   try {
-    // Race: extraction vs timeout
     const result = await Promise.race([
       (async () => {
         await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 20000 });
         await sleep(4000);
         
-        // Check login
         const loginForm = await page.locator('input[name="email"]').count();
         if (loginForm) return { success: false, groupId, error: 'Not logged in' };
         
-        // Inject & extract
         await page.evaluate(coreScript);
         const data = await page.evaluate(async ({ groupId, limit }) => {
           return await window.__fbGroupExtractor({ groupId, limit });
@@ -60,7 +121,6 @@ async function scrapeTab(context, groupId, coreScript) {
         const posts = data.posts || [];
         return { success: posts.length > 0, groupId, count: posts.length, posts };
       })(),
-      // Timeout guard — kill tab if stuck
       sleep(TAB_TIMEOUT_MS).then(() => ({ success: false, groupId, error: 'TIMEOUT', timedOut: true }))
     ]);
     
@@ -72,13 +132,14 @@ async function scrapeTab(context, groupId, coreScript) {
   }
 }
 
-async function runCycle(context, coreScript, cycleNum) {
+async function runCycle(context, coreScript, cycleNum, commentedPosts) {
   log(`━━━ CYCLE #${cycleNum} START ━━━`);
   
-  const results = [];
+  const allResults = [];
   const retryQueue = [];
+  const newPostsToComment = [];
   
-  // Process in batches
+  // Scrape in batches
   for (let i = 0; i < GROUPS.length; i += CONCURRENCY) {
     const batch = GROUPS.slice(i, i + CONCURRENCY);
     const batchResults = await Promise.all(
@@ -87,87 +148,99 @@ async function runCycle(context, coreScript, cycleNum) {
     
     for (const r of batchResults) {
       if (r.success) {
-        results.push(r);
+        allResults.push(r);
         log(`  ✅ ${r.groupId}: ${r.count} bài`);
-      } else if (r.timedOut) {
-        // Tab timed out — add to retry once, don't wait forever
+        
+        // Check for new posts to comment (only tech/web groups)
+        if (COMMENT_GROUPS.has(r.groupId)) {
+          for (const post of r.posts) {
+            if (post.postId && !commentedPosts.has(post.postId)) {
+              // Skip posts by WinterFrost (our own posts)
+              if (post.author && post.author.includes('WinterFrost')) continue;
+              newPostsToComment.push(post);
+            }
+          }
+        }
+      } else if (r.timedOut || (!r.error || r.error !== 'Not logged in')) {
         retryQueue.push(r.groupId);
-        log(`  ⏱️ ${r.groupId}: TIMEOUT — will retry`);
-      } else if (r.error === 'Not logged in') {
-        log(`  ❌ ${r.groupId}: NOT LOGGED IN`);
-        results.push(r);
+        log(`  ⚠️ ${r.groupId}: ${r.timedOut ? 'TIMEOUT' : '0 posts'} — will retry`);
       } else {
-        // Got 0 posts — might need scroll, retry once
-        retryQueue.push(r.groupId);
-        log(`  ⚠️ ${r.groupId}: 0 posts — will retry`);
+        allResults.push(r);
+        log(`  ❌ ${r.groupId}: ${r.error}`);
       }
     }
     
     if (i + CONCURRENCY < GROUPS.length) await sleep(1500);
   }
   
-  // Retry failed ones (one at a time, with more wait)
+  // Retry failed
   if (retryQueue.length > 0) {
     log(`  🔄 Retrying ${retryQueue.length} groups...`);
     for (const gid of retryQueue) {
-      const page = await context.newPage();
-      try {
-        await page.goto(groupUrl(gid), { waitUntil: 'domcontentloaded', timeout: 20000 });
-        await sleep(6000); // Extra wait for slow groups
-        
-        await page.evaluate(coreScript);
-        const data = await page.evaluate(async ({ groupId, limit }) => {
-          return await window.__fbGroupExtractor({ groupId, limit });
-        }, { groupId: gid, limit: POST_LIMIT });
-        
-        const posts = data.posts || [];
-        if (posts.length > 0) {
-          results.push({ success: true, groupId: gid, count: posts.length, posts });
-          log(`  ✅ ${gid} (retry): ${posts.length} bài`);
-        } else {
-          results.push({ success: false, groupId: gid, error: '0 posts after retry', count: 0, posts: [] });
-          log(`  ❌ ${gid} (retry): still 0 posts`);
+      const r = await scrapeTab(context, gid, coreScript);
+      if (r.success) {
+        allResults.push(r);
+        log(`  ✅ ${gid} (retry): ${r.count} bài`);
+        if (COMMENT_GROUPS.has(gid)) {
+          for (const post of r.posts) {
+            if (post.postId && !commentedPosts.has(post.postId)) {
+              if (post.author && post.author.includes('WinterFrost')) continue;
+              newPostsToComment.push(post);
+            }
+          }
         }
-      } catch (err) {
-        results.push({ success: false, groupId: gid, error: err.message });
-        log(`  ❌ ${gid} (retry): ${err.message}`);
-      } finally {
-        try { await page.close(); } catch {}
+      } else {
+        allResults.push({ success: false, groupId: gid, error: r.error || '0 posts', count: 0, posts: [] });
+        log(`  ❌ ${gid} (retry): ${r.error || 'still 0'}`);
       }
     }
   }
   
+  // Comment on new posts
+  if (newPostsToComment.length > 0) {
+    log(`  📝 ${newPostsToComment.length} bài mới cần comment...`);
+    for (const post of newPostsToComment) {
+      const postUrl = post.url || `https://www.facebook.com/groups/${post.groupId || ''}/posts/${post.postId}/`;
+      const ok = await commentOnPost(context, postUrl, coreScript);
+      if (ok) {
+        commentedPosts.add(post.postId);
+      } else {
+        // Still mark as seen so we don't retry endlessly
+        commentedPosts.add(post.postId);
+      }
+      // Small delay between comments to avoid spam detection
+      await sleep(3000);
+    }
+    saveCommented(commentedPosts);
+  } else {
+    log(`  📝 Không có bài mới cần comment`);
+  }
+  
   // Save results
   fs.mkdirSync(RESULTS_DIR, { recursive: true });
-  const ts = new Date().toISOString().replace(/[:.]/g, '-');
-  const outFile = path.join(RESULTS_DIR, `cycle-${cycleNum}-${ts}.json`);
-  const succeeded = results.filter(r => r.success).length;
+  const succeeded = allResults.filter(r => r.success).length;
   const summary = {
     cycle: cycleNum,
     timestamp: now(),
-    total: results.length,
+    total: allResults.length,
     succeeded,
-    failed: results.length - succeeded,
-    results
+    failed: allResults.length - succeeded,
+    newComments: newPostsToComment.length,
+    commentedTotal: commentedPosts.size,
+    results: allResults
   };
-  fs.writeFileSync(outFile, JSON.stringify(summary, null, 2), 'utf8');
-  
-  // Also save latest
   fs.writeFileSync(path.join(RESULTS_DIR, 'latest.json'), JSON.stringify(summary, null, 2), 'utf8');
   
-  log(`━━━ CYCLE #${cycleNum} DONE: ${succeeded}/${results.length} groups OK ━━━`);
+  log(`━━━ CYCLE #${cycleNum} DONE: ${succeeded}/${allResults.length} groups | ${newPostsToComment.length} comments ━━━`);
   return summary;
 }
 
 async function main() {
-  const intervalMs = Number(process.argv[2] || CYCLE_INTERVAL_MS);
-  
   log('========================================');
-  log(`FB Group Daemon starting — interval: ${intervalMs/1000}s`);
-  log(`Groups: ${GROUPS.length} | Concurrency: ${CONCURRENCY} | Tab timeout: ${TAB_TIMEOUT_MS/1000}s`);
+  log(`FB Daemon v2 — interval: ${CYCLE_INTERVAL_MS/1000}s | auto-comment ON`);
+  log(`Tech groups (comment): ${COMMENT_GROUPS.size} | Total: ${GROUPS.length}`);
   log('========================================');
   
-  // Launch persistent browser — NEVER close it
   fs.mkdirSync(PROFILE_DIR, { recursive: true });
   const context = await chromium.launchPersistentContext(PROFILE_DIR, {
     headless: false,
@@ -176,25 +249,27 @@ async function main() {
   });
   
   const coreScript = fs.readFileSync(CORE_EXTRACTOR_FILE, 'utf8');
+  const commentedPosts = loadCommented();
+  log(`Loaded ${commentedPosts.size} previously commented posts`);
+  
   let cycleNum = 0;
   
-  // Run first cycle immediately
   while (true) {
     cycleNum++;
     try {
-      await runCycle(context, coreScript, cycleNum);
+      await runCycle(context, coreScript, cycleNum, commentedPosts);
     } catch (err) {
       log(`CYCLE #${cycleNum} ERROR: ${err.message}`);
     }
     
-    // Close any stale pages (keep only 1 blank tab)
+    // Cleanup stale pages
     const pages = context.pages();
     for (let i = 1; i < pages.length; i++) {
       try { await pages[i].close(); } catch {}
     }
     
-    log(`Sleeping ${intervalMs/1000}s until next cycle...`);
-    await sleep(intervalMs);
+    log(`Sleeping ${CYCLE_INTERVAL_MS/1000}s...`);
+    await sleep(CYCLE_INTERVAL_MS);
   }
 }
 

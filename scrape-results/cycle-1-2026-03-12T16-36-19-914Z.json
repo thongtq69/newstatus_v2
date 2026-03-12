@@ -1,0 +1,734 @@
+{
+  "cycle": 1,
+  "timestamp": "23:36:19 12/3/2026",
+  "total": 17,
+  "succeeded": 15,
+  "failed": 2,
+  "results": [
+    {
+      "success": true,
+      "groupId": "toolwebapp",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "34232395276408743",
+          "url": "https://www.facebook.com/groups/toolwebapp/posts/34232395276408743/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "45 phút",
+          "content": "ú · Em cần xây tool hoặc extension page nhắn tin cho khách cũ đã nhắn tin cho page. Bác nào làm được cmt nhé 1 1 8 bình luận Xem thêm bình luận Vũ Thành Đô · Ib mình nhận nhé Bao test 45 phút Trả lời dưới tên Thông",
+          "snippet": "ú · Em cần xây tool hoặc extension page nhắn tin cho khách cũ đã nhắn tin cho page. Bác nào làm được cmt nhé 1 1 8 bình luận Xem thêm bình luận Vũ Thành Đô · Ib mình nhận nhé Bao test 45 phút Trả lời dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "34232128293102108",
+          "url": "https://www.facebook.com/groups/toolwebapp/posts/34232128293102108/",
+          "author": "Đặng Mai Sao",
+          "timeText": "59 phút",
+          "content": "ờ · Nhà mình ai có minimax ko ạ ? 2 2 2 bình luận Kiều Quang Chị check ib e tư vấn ạ Đặng Mai Sao 59 phút Trả lời Van Linh có ib đi b 1 giờ Trả lời Trả lời dưới tên Thông",
+          "snippet": "ờ · Nhà mình ai có minimax ko ạ ? 2 2 2 bình luận Kiều Quang Chị check ib e tư vấn ạ Đặng Mai Sao 59 phút Trả lời Van Linh có ib đi b 1 giờ Trả lời Trả lời dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "34231724143142523",
+          "url": "https://www.facebook.com/groups/toolwebapp/posts/34231724143142523/",
+          "author": "Hoàng Thanh",
+          "timeText": "1 giờ",
+          "content": "ờ · Co bác nao co tool pha mat khau giai nen file Rar ko nhi 3 3 1 bình luận Van Linh có nha b có tool brute force 1 giờ Trả lời dưới tên Thông",
+          "snippet": "ờ · Co bác nao co tool pha mat khau giai nen file Rar ko nhi 3 3 1 bình luận Van Linh có nha b có tool brute force 1 giờ Trả lời dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "thietkewebvietnam",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "1437897867816193",
+          "url": "https://www.facebook.com/groups/thietkewebvietnam/posts/1437897867816193/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "9 giờ",
+          "content": "ờ · Mình cần bạn sinh viên làm code về 1 trang web nhỏ đơn giản giá sinh viên ạ, có kinh nghiệm làm đồ án thì càng tốt vì mình cần thuyết trình. Cmt mình chủ động ib ạ 27 27 71 bình luận Xem thêm câu trả lời Cong Cao Bên em nhận làm nhé! Bên em là team lập trình Covasol. Bên em chuyên thiết kế & chỉnh sửa Website, tối ",
+          "snippet": "ờ · Mình cần bạn sinh viên làm code về 1 trang web nhỏ đơn giản giá sinh viên ạ, có kinh nghiệm làm đồ án thì càng tốt vì mình cần thuyết trình. Cmt mình chủ động ib ạ 27 27 71 bình luận Xem thêm câu trả lời Cong Cao Bên em nhận làm nhé! Bên em là team lập trình Covasol. Bên em chuyên thiết kế & chỉnh sửa Website, tối ",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "1438112501128063",
+          "url": "https://www.facebook.com/groups/thietkewebvietnam/posts/1438112501128063/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "4 giờ",
+          "content": "ờ i 6 6 0 u a l · Mình cần người code tool cào sản phẩm từ các sàn thương mại điện tử ai làm được comment bên dưới 4 4 23 bình luận Xem thêm bình luận Lê Lê ib b 4 giờ Trả lời Ng Hoang · Mình có kinh nghiệm hỗ trợ nội dung này. Bạn cần liên hệ mình trao đổi chi tiết nha. Mình sẽ báo p.h.í hỗ trợ để bạn tham khảo./. 4 g",
+          "snippet": "ờ i 6 6 0 u a l · Mình cần người code tool cào sản phẩm từ các sàn thương mại điện tử ai làm được comment bên dưới 4 4 23 bình luận Xem thêm bình luận Lê Lê ib b 4 giờ Trả lời Ng Hoang · Mình có kinh nghiệm hỗ trợ nội dung này. Bạn cần liên hệ mình trao đổi chi tiết nha. Mình sẽ báo p.h.í hỗ trợ để bạn tham khảo./. 4 g",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "1437914937814486",
+          "url": "https://www.facebook.com/groups/thietkewebvietnam/posts/1437914937814486/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "9 giờ",
+          "content": "ờ i 6 6 0 u a l · Mình tìm agency phát triển app mobile. 25 25 45 bình luận Xem thêm bình luận Cong Cao Bên em nhận làm nhé! Bên em là team lập trình Covasol. Bên em chuyên thiết kế & chỉnh sửa Website, tối ưu tốc độ – chuẩn SEO, triển khai SEO từ khóa, phát triển App – Phần mềm – Landing Page – Tool làm việc/ n8n – Gi",
+          "snippet": "ờ i 6 6 0 u a l · Mình tìm agency phát triển app mobile. 25 25 45 bình luận Xem thêm bình luận Cong Cao Bên em nhận làm nhé! Bên em là team lập trình Covasol. Bên em chuyên thiết kế & chỉnh sửa Website, tối ưu tốc độ – chuẩn SEO, triển khai SEO từ khóa, phát triển App – Phần mềm – Landing Page – Tool làm việc/ n8n – Gi",
+          "imageUrls": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "1685891735047297",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "3946721222297659",
+          "url": "https://www.facebook.com/groups/1685891735047297/posts/3946721222297659/",
+          "author": "WinterFrost",
+          "timeText": "",
+          "content": "ờ · Dạ em chào mọi ngườii, em hỗ trợ:… Xem thêm +5 1 1 dưới tên Thông Bạn đang bình luận dưới tên Thông Quốc.",
+          "snippet": "ờ · Dạ em chào mọi ngườii, em hỗ trợ:… Xem thêm +5 1 1 dưới tên Thông Bạn đang bình luận dưới tên Thông Quốc.",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649842326_122117580177186796_3042058656921511398_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=-Q4_eKs1P6AQ7kNvwGXIHot&_nc_oc=AdnHF6d5J5OX9clgplnK4CJnLb349uWuwxZGomch_2T_5UfQCzgUd_7LyHxI9hf-Xe4kMK5uI5FCaSjQitlVFAfC&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=SVJenehkwbG-0jPRgiCwkQ&_nc_ss=8&oh=00_AfySTMRl3OenHeY47Cr6i8vsV03QTxvxCVy9SEclN6I_oA&oe=69B8B93F",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651042413_122117580231186796_2301134837218369905_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=mWP-b2PNytcQ7kNvwGOaVbi&_nc_oc=Adkx8cr7fqFnLuMfzei81meTCz09BrPAih1Ye_r4nymuj1AHo5L57jP1HQJlEU0odZGbzX11I2XSJA7sY8uAVgkF&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=SVJenehkwbG-0jPRgiCwkQ&_nc_ss=8&oh=00_AfxQO-DLEaZRCmoa4A_OYmuPADYuiQ9wQ-NnhgoS1xG8yA&oe=69B8C0E1",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649199433_122117580207186796_631205257325542064_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=7ngeMqC7InoQ7kNvwFZaq2E&_nc_oc=Admji6DhZZtoPDQ2VBNm_pJMSAY5KBquKZp2K4PSLYlAwTHKnVp7CBkhLaISi-yYskY2VUEyBrbatldEQqFHl6YB&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=SVJenehkwbG-0jPRgiCwkQ&_nc_ss=8&oh=00_AfyfWPudo1AZKANjfhp8j-ZPvxRh9nJrwAz3wTqf4Sf2SQ&oe=69B8A3A1",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649662391_122117580315186796_5165930646822634717_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=rtnf5i2661oQ7kNvwF_lwmi&_nc_oc=AdmEurzz2fzhFRoaf9xbA68Aw_5RykqgJ3GE9xDky4RPZL2y2XeOM-saATu5C9Ux3WLA8WBugfNw5cfAbZqDpXr5&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=SVJenehkwbG-0jPRgiCwkQ&_nc_ss=8&oh=00_Afz8Pbp_SXzqv2JkUINtm9r1lFlkHi9DQOiwLSwHw5S6nQ&oe=69B8AA08",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650813164_122117580351186796_5311385856808557840_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=ENMDrWSWaN4Q7kNvwH7KGVB&_nc_oc=Admcp8A0nwXfx92anezZm8D63bpMmw3kdnf6dZXYCpNptvSCVJGljN2DjeTAnzhj1MSbEI1qBMFd743RFwX7UfJr&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=SVJenehkwbG-0jPRgiCwkQ&_nc_ss=8&oh=00_AfwLCRQVp8UqippzHucW_fJF23sJbp6Mh33j6s6XaOx8QQ&oe=69B8B314"
+          ],
+          "imageCount": 5
+        },
+        {
+          "postId": "3946749912294790",
+          "url": "https://www.facebook.com/groups/1685891735047297/posts/3946749912294790/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "20 phút",
+          "content": "ờ h 3 8 a 1 9 · cần tìm người thiết kế giao diện mẫu nhiều sản phẩm dùng cho trang đồ chơi mẫu có thể sử dụng suất file bằng wed cake 6 6 8 bình luận Xem thêm bình luận An Nhiên - 2D/3D Designer · Video AI quảng cáo, giới thiệu sản phẩm, cinematic đều nhận. 20 phút Trả lời Nhật Hạ - Làm Logo Banner Poster Nhanh Chất Lư",
+          "snippet": "ờ h 3 8 a 1 9 · cần tìm người thiết kế giao diện mẫu nhiều sản phẩm dùng cho trang đồ chơi mẫu có thể sử dụng suất file bằng wed cake 6 6 8 bình luận Xem thêm bình luận An Nhiên - 2D/3D Designer · Video AI quảng cáo, giới thiệu sản phẩm, cinematic đều nhận. 20 phút Trả lời Nhật Hạ - Làm Logo Banner Poster Nhanh Chất Lư",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "3946655305637584",
+          "url": "https://www.facebook.com/groups/1685891735047297/posts/3946655305637584/",
+          "author": "Mai Thùy Hương",
+          "timeText": "",
+          "content": "Người đóng góp đang lên · ờ h 3 8 a 1 9 · Em đi có va quệt nhẹ mà chủ con xe cỏ này bắt đền em cả trăm triệu các bác ạ. Bựk hết cả mình 1 1 dưới tên Thông",
+          "snippet": "Người đóng góp đang lên · ờ h 3 8 a 1 9 · Em đi có va quệt nhẹ mà chủ con xe cỏ này bắt đền em cả trăm triệu các bác ạ. Bựk hết cả mình 1 1 dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yu/r/bWKbCk8tN0y.webp",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t8d/1/16/1f621.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t82/1/16/1f92c.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649283968_122109104979247969_5045465231136877017_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=qsWeoxj2_esQ7kNvwH1M_u7&_nc_oc=Adl439xPfVYXcdPCv1Jeoghc6fDjWaU-BO5HRyNgV_vPX0LcH8v6tQ36tu0nm-R0B_H4Ljo0m8BqHqPOSr5pODfM&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=JYJJRCMZyRff1DaArsHcXw&_nc_ss=8&oh=00_AfwLz5kzljNsF7BbvqPgbHQwxGAjs7fDJt70SZ7w67-G3w&oe=69B8B6F3"
+          ],
+          "imageCount": 4
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "1104882584238051",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "1931309754928659",
+          "url": "https://www.facebook.com/groups/1104882584238051/posts/1931309754928659/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "10 giờ",
+          "content": "ờ · Có ai cần ng kyc gi k ạ 1 1 6 bình luận Xem thêm bình luận SkilledTurkey3649 Ib kyc acb 150 10 giờ Trả lời Người tham gia ẩn danh 109 Kyc app k 2 giờ Trả lời Xem tất cả 2 phản hồi dưới tên Thông",
+          "snippet": "ờ · Có ai cần ng kyc gi k ạ 1 1 6 bình luận Xem thêm bình luận SkilledTurkey3649 Ib kyc acb 150 10 giờ Trả lời Người tham gia ẩn danh 109 Kyc app k 2 giờ Trả lời Xem tất cả 2 phản hồi dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "1930742554985379",
+          "url": "https://www.facebook.com/groups/1104882584238051/posts/1930742554985379/",
+          "author": "Đồng Hồ Cát",
+          "timeText": "10 giờ",
+          "content": "ờ · Mình là dev cần mua kèo kiếm tiền mmo, hoặc hợp tác làm ăn chia. ACE nào quan tâm thì ib mình nhé 6 6 9 bình luận Xem thêm bình luận Zen X Tool Mình cũng là Dev, nhưng đã ra chuồng rồi 10 giờ Trả lời Xem tất cả 3 phản hồi Người tham gia ẩn danh 633 Inb tele @HotroNNK có kèo ăn chia nếu bạn làm được 5 giờ Trả lời Xe",
+          "snippet": "ờ · Mình là dev cần mua kèo kiếm tiền mmo, hoặc hợp tác làm ăn chia. ACE nào quan tâm thì ib mình nhé 6 6 9 bình luận Xem thêm bình luận Zen X Tool Mình cũng là Dev, nhưng đã ra chuồng rồi 10 giờ Trả lời Xem tất cả 3 phản hồi Người tham gia ẩn danh 633 Inb tele @HotroNNK có kèo ăn chia nếu bạn làm được 5 giờ Trả lời Xe",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tef/1/16/1f414.png"
+          ],
+          "imageCount": 1
+        },
+        {
+          "postId": "1923309605728674",
+          "url": "https://www.facebook.com/groups/1104882584238051/posts/1923309605728674/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "1 ngày",
+          "content": "ú t 8 g 5 : 8 4 9 1 u ô 5 8 l 6 l i h g m · Mình vừa nghỉ sau Tết, 7+ năm làm WordPress plugin & theme. Đang tìm team/đố . Ai cần cmt mình ib nhé! 2 2 3 bình luận 1 lượt chia sẻ Người tham gia ẩn danh 287 Ib tele @mrwake01 nhé 1 ngày Trả lời Xem tất cả 2 phản hồi dưới tên Thông",
+          "snippet": "ú t 8 g 5 : 8 4 9 1 u ô 5 8 l 6 l i h g m · Mình vừa nghỉ sau Tết, 7+ năm làm WordPress plugin & theme. Đang tìm team/đố . Ai cần cmt mình ib nhé! 2 2 3 bình luận 1 lượt chia sẻ Người tham gia ẩn danh 287 Ib tele @mrwake01 nhé 1 ngày Trả lời Xem tất cả 2 phản hồi dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "congdongthietkewebsitegiare",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "1639522967084382",
+          "url": "https://www.facebook.com/groups/congdongthietkewebsitegiare/posts/1639522967084382/",
+          "author": "Nắng Hạ",
+          "timeText": "4 giờ",
+          "content": "ờ · Em nhận làm landingpage, website với chi phí phù hợp ạ. Anh/chị bên lĩnh vực nào, cứ ib trực tiếp minhg cùng trao đổi thêm nhé! 1 1 6 bình luận Xem thêm bình luận Nắng Hạ Mình trao đổi thêm nha 4 giờ Trả lời Nắng Hạ Anh chị 4 giờ Trả lời dưới tên Thông",
+          "snippet": "ờ · Em nhận làm landingpage, website với chi phí phù hợp ạ. Anh/chị bên lĩnh vực nào, cứ ib trực tiếp minhg cùng trao đổi thêm nhé! 1 1 6 bình luận Xem thêm bình luận Nắng Hạ Mình trao đổi thêm nha 4 giờ Trả lời Nắng Hạ Anh chị 4 giờ Trả lời dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "1639448383758507",
+          "url": "https://www.facebook.com/groups/congdongthietkewebsitegiare/posts/1639448383758507/",
+          "author": "Người tham gia ẩn danh",
+          "timeText": "5 giờ",
+          "content": "ờ · Em cần thiết kế website để up tài liệu nội bộ lên (trước đã dùng google site) và giờ cần cải tiến hơn. Anh/ chị nào làm được để lại bình luận giúp em nhé. Budget 1tr ạ. Em cảm ơn. 13 13 39 bình luận Xem thêm câu trả lời Hải Yến Mình nhận nhé! Bên mình chuyên cung cấp giải pháp công nghệ trọn gói, bao gồm: • Thiết k",
+          "snippet": "ờ · Em cần thiết kế website để up tài liệu nội bộ lên (trước đã dùng google site) và giờ cần cải tiến hơn. Anh/ chị nào làm được để lại bình luận giúp em nhé. Budget 1tr ạ. Em cảm ơn. 13 13 39 bình luận Xem thêm câu trả lời Hải Yến Mình nhận nhé! Bên mình chuyên cung cấp giải pháp công nghệ trọn gói, bao gồm: • Thiết k",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "1639278297108849",
+          "url": "https://www.facebook.com/groups/congdongthietkewebsitegiare/posts/1639278297108849/",
+          "author": "Lương Phương Xuân",
+          "timeText": "12 giờ",
+          "content": "ờ · Em cần tìm ĐƠN VỊ làm AEO từ đầu, ai nhận ib hoặc alo em: 032.913.8082 ! Em cảm ơn a/c ạ! 7 7 8 bình luận Xem thêm bình luận Cong Cao Bên em nhận làm nhé! Bên em là team lập trình Covasol. Bên em chuyên thiết kế & chỉnh sửa Website, tối ưu tốc độ – chuẩn SEO, triển khai SEO từ khóa, phát triển App – Phần mềm – Land",
+          "snippet": "ờ · Em cần tìm ĐƠN VỊ làm AEO từ đầu, ai nhận ib hoặc alo em: 032.913.8082 ! Em cảm ơn a/c ạ! 7 7 8 bình luận Xem thêm bình luận Cong Cao Bên em nhận làm nhé! Bên em là team lập trình Covasol. Bên em chuyên thiết kế & chỉnh sửa Website, tối ưu tốc độ – chuẩn SEO, triển khai SEO từ khóa, phát triển App – Phần mềm – Land",
+          "imageUrls": [],
+          "imageCount": 0
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "hoithietkewebsiteviet",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "4240743862909617",
+          "url": "https://www.facebook.com/groups/hoithietkewebsiteviet/posts/4240743862909617/",
+          "author": "QWebDesign",
+          "timeText": "1 giờ",
+          "content": "Người đóng góp nhiều nhất · ờ · THIẾT KẾ WEBSITE TRỌN GÓI CHỈ TỪ 𝟐.𝟗𝟗𝟎.𝟎𝟎𝟎đ Bạn đang… Xem thêm 2 bình luận Danh Sinh OSINER nhận làm web đăng tin, theo yêu cầu, nhanh chóng – zalo 096 998 5002. 1 giờ Trả lời Danh Sinh OSINER làm web đăng tin cơ bản, nhanh gọn – zalo 096 998 5002. 37 phút Trả lời dưới tên Thông",
+          "snippet": "Người đóng góp nhiều nhất · ờ · THIẾT KẾ WEBSITE TRỌN GÓI CHỈ TỪ 𝟐.𝟗𝟗𝟎.𝟎𝟎𝟎đ Bạn đang… Xem thêm 2 bình luận Danh Sinh OSINER nhận làm web đăng tin, theo yêu cầu, nhanh chóng – zalo 096 998 5002. 1 giờ Trả lời Danh Sinh OSINER làm web đăng tin cơ bản, nhanh gọn – zalo 096 998 5002. 37 phút Trả lời dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yJ/r/9IJioPU0OFV.webp",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t50/1/16/1f525.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649635196_122120837013103334_2352557663175953892_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=hMsLrQe6iY4Q7kNvwHqvxFj&_nc_oc=AdnG9trPqifQ8zCiN8JNBVhi_fOCVwWbkU8qPB3i097fCXGpfIBzYx_LzXWkJMpN5gMdojgy50AcfFiVjkcCv0kO&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=0tUDaq3FywskhEXsF5m3vg&_nc_ss=8&oh=00_AfzcDewZ5fqtJ1huzt-z9dusJdl4sEJIgfHjaww62dqvhw&oe=69B8B4CD",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651140673_122120837067103334_421116403081708250_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=Kdm0kbsX6vYQ7kNvwFjwy3H&_nc_oc=AdkHyy7gT52ga9W1PZmWUdtSCrA-k4rkiAmY8WFCiZpB6UuBiX2RdUE4Slcz4za9JPc8DlQG9Lvm40y2YivyBWza&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=0tUDaq3FywskhEXsF5m3vg&_nc_ss=8&oh=00_AfwpaoeMgyNCHCLmULVWINo-mY19A-Y70YnrVY_GojH4QA&oe=69B8D2C5",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650332793_122120837121103334_6030668907815868597_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=zHaKwnTflLoQ7kNvwG_g9OL&_nc_oc=Adlo6ufX8EmzBSYeqB1FrsgAkqbaycC2LPiZcp7NGE8lLXOIodaYvz2hfLFR-Jtqh9qPmjN2ipReAZdH4cNPtInc&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=0tUDaq3FywskhEXsF5m3vg&_nc_ss=8&oh=00_Afxi_k4Ku4E6M1M61yqNCQeKc_rEqNIn1ZlpPcu4WwTVCg&oe=69B8AEB8",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651625229_122120837229103334_1602526331476334868_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=FkP56FMEDx0Q7kNvwEjh1Nx&_nc_oc=AdkNclOwO2qSRHsecxEH0_PYPd_3DjWsJcVWQgGydreaYweTm7wrxVU0r-p4LWDGckxv_434UXTc-WFWtkfTU4D-&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=0tUDaq3FywskhEXsF5m3vg&_nc_ss=8&oh=00_Afz6HF_XmA6LmdNYejow8gMv1D5ZIfs83vtOVNdbAZgL6w&oe=69B8CBB3"
+          ],
+          "imageCount": 6
+        },
+        {
+          "postId": "4240913826225954",
+          "url": "https://www.facebook.com/groups/hoithietkewebsiteviet/posts/4240913826225954/",
+          "author": "WinterFrost",
+          "timeText": "",
+          "content": "Người đóng góp nhiều nhất · ờ · Dạ em chào mọi ngườii, em hỗ trợ:… Xem thêm +5 dưới tên Thông Bạn đang bình luận dưới tên Thông Quốc.",
+          "snippet": "Người đóng góp nhiều nhất · ờ · Dạ em chào mọi ngườii, em hỗ trợ:… Xem thêm +5 dưới tên Thông Bạn đang bình luận dưới tên Thông Quốc.",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yJ/r/9IJioPU0OFV.webp",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650100248_122117592807186796_5270415054761111687_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=jrMBUM8VEecQ7kNvwH3Hb3W&_nc_oc=Adl8QciMmoj9CfXhrBIGHKbHQrx6GixHZ-kFUXOkjCXB7PK8kF24npmGb3xkPKINa-WLAl4nMNE7tqxx9kPYJ91B&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_AfxCBifICgcj9KMeo2WavHtaqsJtm0jaAR9DlkqM6vrV0w&oe=69B8A97A",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649276660_122117592861186796_7848489932180524249_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=ta7K7WbzaLwQ7kNvwEnb3Ck&_nc_oc=Adl1na0w5LKbyAwVpBIDrWXIRML-b8qbmMoAtQRSzNT-thZJ1trPafM7FxQrybfCQ1na8Q_W7je1T-o6c82XhHco&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_Afw2D1lbK_E3Y16LZhbYCa6Qw-PQOcNe6tvYaoa2lEj6DA&oe=69B8C5B9",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650450632_122117592837186796_2782781796769627894_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=537oseQHJEIQ7kNvwF5bUTO&_nc_oc=Adl0Kn6huKbPq_HzJ08SZb5l38X_oViihThhpgQyVkKJXKUntF0_4cpHN77FC2Bk0ooAZEnsB4N2_EqtV3aM5Lu1&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_Afwe238CkG8iaCwf0Y9ncqPOR-YXWXAFvPkoJJoj4sB-RA&oe=69B8ABB1",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649378638_122117592939186796_1650557607444935956_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=5N_iaPIcRmYQ7kNvwEWcHl4&_nc_oc=AdmJCBNdnZVWDy1T3gbUs1qpAFDg1a7y1T8-fMwqoqHYw-1pdiBqtHJfi2bOnI6ktNmlAkVluLbSq6480osvs9zf&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_AfzGUZp9c1j3dOCXQlDxbnSwcHwYE0tFhOO75JmEnu6MDA&oe=69B8D5EF",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650776727_122117592987186796_6659417031679193916_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=EOt87lDGBsoQ7kNvwEy0rv4&_nc_oc=Adl3HUrjo5S1Vx60z5Em8u8slP6k6MMGAFE7kCmesWB7le9RZCKI45adC-fM39tZM3QaqoxYe2-1VXRMgS2z4u1t&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_AfzHnwynVxrsMQ_xaP2dvIb8rYggGKeH0d2QXxhy_9Ep9A&oe=69B8A30B"
+          ],
+          "imageCount": 6
+        },
+        {
+          "postId": "4240670576250279",
+          "url": "https://www.facebook.com/groups/hoithietkewebsiteviet/posts/4240670576250279/",
+          "author": "WinterFrost",
+          "timeText": "",
+          "content": "Người đóng góp nhiều nhất · ờ · Dạ em chào mọi ngườii, em hỗ trợ:… Xem thêm +5 dưới tên Thông Bạn đang bình luận dưới tên Thông Quốc.",
+          "snippet": "Người đóng góp nhiều nhất · ờ · Dạ em chào mọi ngườii, em hỗ trợ:… Xem thêm +5 dưới tên Thông Bạn đang bình luận dưới tên Thông Quốc.",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yJ/r/9IJioPU0OFV.webp",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649595719_122117506257186796_2552784637184589222_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=J6-Gl2_WjbsQ7kNvwH2MagA&_nc_oc=AdnqaMz-3cl7nT3vV6s6aJGQgY3fTPC0ja3MSA8VJJewvKIDYrSXP72oi37OMaFNA3SyfEFAvB2K6b60zVaZprWy&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_Afz0O7VT4BywY1_BONSzOFtJazKeb3sY7umnuA2b430Thg&oe=69B8B1BC",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649854517_122117506239186796_1820880490911957058_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=WntlVzR3k3gQ7kNvwF_V9hu&_nc_oc=Adnhc__rfzVWReQdUO4mQxdns_fbgyBjthVDVTu35LKSWVR9X8AhEA7HvXBeiCeh25sGx0B4tZLsvNj7pFYjy6TJ&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_AfyRYrmoqi4YYUNJvy2roxIuZ0u1O08uUMhdHbgN-XdsCw&oe=69B8C088",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649641620_122117506263186796_3742889668809220760_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=YMuIVNpjwo0Q7kNvwEFJ7sE&_nc_oc=AdnajyceMJMyoKHnQEtYKklfFbjGzFjmq8tSWCeDYErKEm8sJfrnrhJJ41xRmzaE_pHqfp_RxmJu2DLfFPVj3FgL&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_AfyfOCSD3Vkgy4ODZ_0NgUVhaKVvCmOsOzdDlPP5evuCyA&oe=69B8B49D",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650028575_122117506383186796_2225949307587668136_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=O2iUb8iOWeEQ7kNvwGYA7aT&_nc_oc=AdkoLdltVvId2Trgw35kMJDBDUfp2OYxsDwvrs-6eAYfAr6ynk6Xy2fsKODX-wgsIXQqrAbheb87pITZ6SIDzd5G&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_Afx6OICvq3h6ZFWcFmQo8GClUFMx2U94dWrNaAEZ0FEZxA&oe=69B8D807",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650837214_122117506377186796_3191327368175219518_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=om2RFhnHgiIQ7kNvwHZyXez&_nc_oc=AdkJrScLGWw5s7adoI8DiV9HZp-Fyz8YcfYWLpXaBpusAGQZDNVCiz5QkyTtlVbFzXApZ-AswLvptjmVwBYU5ZQ-&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=00peqnSJgsWYB1jS-PdvJw&_nc_ss=8&oh=00_AfxmJq2gexdSDnYf35hJc3to5c3Jr2gwPIxXncuPSrC0Yw&oe=69B8D4E0"
+          ],
+          "imageCount": 6
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "1998083910206781",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "27236031159318708",
+          "url": "https://www.facebook.com/groups/1998083910206781/posts/27236031159318708/",
+          "author": "Thiết kế website Thanh Bình",
+          "timeText": "",
+          "content": "Quản trị viên · ờ · Chào mừng các thành viên mới! Lan Anh,… Xem thêm dưới tên Thông",
+          "snippet": "Quản trị viên · ờ · Chào mừng các thành viên mới! Lan Anh,… Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/517127380_1303385068461199_4521345605886433333_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=bc_EUTPo6xQQ7kNvwH0nqYp&_nc_oc=AdlcF2izwd8iFvMBHH2Brw-exQqRYJTSXByYc_-mSOfqkFNodNcqVyFWVjtclTZGtcs8U5XCaLiltDGflBH8e6g1&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=CV6eD2Ftb8-sYpI53AYquA&_nc_ss=8&oh=00_Afy-PqkP06elPsOzYAGmSqWSQPOIc-NtHKpBv3v8wVa6lg&oe=69B8D6D4"
+          ],
+          "imageCount": 1
+        },
+        {
+          "postId": "27223808160541008",
+          "url": "https://www.facebook.com/groups/1998083910206781/posts/27223808160541008/",
+          "author": "Thiết kế website Thanh Bình",
+          "timeText": "",
+          "content": "Quản trị viên · ờ · dưới tên Thông",
+          "snippet": "Quản trị viên · ờ · dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/518343151_1303386511794388_4896100767333004974_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=XwiLr5ZWCxoQ7kNvwES21Cy&_nc_oc=Adm5d9Qg7WXJtINmvZRjs0l9ZKJnDN7kBLnw8_M4LDoAT-6LlBVQVMf8R7UPteH4uvKHltJUmnA33MEnHGuzLDyl&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=wjbJo3IAAFkYb6l9R7YGkw&_nc_ss=8&oh=00_AfwMYJ1z_zRmqx5PtTt8Z8ap9-bTsciiyWEVJ06LoR1dbA&oe=69B8BC4B"
+          ],
+          "imageCount": 1
+        },
+        {
+          "postId": "27224453750476449",
+          "url": "https://www.facebook.com/groups/1998083910206781/posts/27224453750476449/",
+          "author": "Tuyền Tuyền",
+          "timeText": "1 ngày",
+          "content": "đang ở Mễ Trì Hạ, Từ Liêm, Hà Nội. o e d o s p S r t n ú a 5 : 5 ô · Hà Nội · Ứng dụng AI trong SEO Image – một ngách SEO đang bị bỏ quên… Xem thêm 1 1 1 bình luận Tú Anh - Hoạ viên thiết kế 2D & 3D · Bên mình tập trung mạnh về Animation 3D và 3D kiến trúc, hỗ trợ thêm Web – Branding – In ấn trọn bộ. Anh/chị cần hỗ trợ",
+          "snippet": "đang ở Mễ Trì Hạ, Từ Liêm, Hà Nội. o e d o s p S r t n ú a 5 : 5 ô · Hà Nội · Ứng dụng AI trong SEO Image – một ngách SEO đang bị bỏ quên… Xem thêm 1 1 1 bình luận Tú Anh - Hoạ viên thiết kế 2D & 3D · Bên mình tập trung mạnh về Animation 3D và 3D kiến trúc, hỗ trợ thêm Web – Branding – In ấn trọn bộ. Anh/chị cần hỗ trợ",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t3c/1/16/1f4a1.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649165387_26275936262092645_6526312982334117250_n.jpg?stp=dst-jpg_s1080x2048_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=0cb0bAtOGxEQ7kNvwGP3-mJ&_nc_oc=AdkUR52hQcFg6NHt_8HEUngT9EpxvO5NYi-cq4SAl3qOudiV2m2GvueBSDvLATJ7Ir0VSx099OR_IfyNk4qqizSD&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=wjbJo3IAAFkYb6l9R7YGkw&_nc_ss=8&oh=00_AfxOyA_wqJtAxcpvMr3c0OeK0o6fRdygtwvPWBwPXXZObg&oe=69B8C86D",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/2714.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tc0/1/16/1f4e9.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t2d/1/16/1f4cd.png"
+          ],
+          "imageCount": 5
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "n8n.automation",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "25999088766438159",
+          "url": "https://www.facebook.com/groups/n8n.automation/posts/25999088766438159/",
+          "author": "Chí Tôn",
+          "timeText": "25 phút",
+          "content": "ú · Mình muốn tìm dev tạo được automate api kết nối chat gpt vào nano banana pro để tự động gen ảnh 4 4 2 bình luận Van Duong ib sẵn 25 phút Trả lời Hưng Thịnh ib em ạ 7 phút Trả lời dưới tên Thông",
+          "snippet": "ú · Mình muốn tìm dev tạo được automate api kết nối chat gpt vào nano banana pro để tự động gen ảnh 4 4 2 bình luận Van Duong ib sẵn 25 phút Trả lời Hưng Thịnh ib em ạ 7 phút Trả lời dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "25999014753112227",
+          "url": "https://www.facebook.com/groups/n8n.automation/posts/25999014753112227/",
+          "author": "Trần Chang",
+          "timeText": "1 giờ",
+          "content": "· ờ · Em người mới chưa biết gì. Cần n8n sản xuất video hàng loạt đồng nhất nhân vật để làm tiktok. Nhờ mọi ngưòi hỗ trợ ạ! 12 12 5 bình luận 1 lượt chia sẻ Thanh ib mình có sẳn workflow 1 giờ Trả lời Xem tất cả 4 phản hồi dưới tên Thông",
+          "snippet": "· ờ · Em người mới chưa biết gì. Cần n8n sản xuất video hàng loạt đồng nhất nhân vật để làm tiktok. Nhờ mọi ngưòi hỗ trợ ạ! 12 12 5 bình luận 1 lượt chia sẻ Thanh ib mình có sẳn workflow 1 giờ Trả lời Xem tất cả 4 phản hồi dưới tên Thông",
+          "imageUrls": [],
+          "imageCount": 0
+        },
+        {
+          "postId": "25996876663326036",
+          "url": "https://www.facebook.com/groups/n8n.automation/posts/25996876663326036/",
+          "author": "Linh Chi",
+          "timeText": "12 Tháng",
+          "content": "ờ · Mình cần workflow để làm các dạng clip này. Idea của mình —> kịch bản —> hình ảnh/ clip minh hoạ —> Sub text —> Voice Bạn nào làm ib mình trao đổi nhé Mình cần workflow để làm các dạng clip này. Idea của mình —> kịch bản —> hình ảnh/ clip minh hoạ —> Sub text —> Voice Bạn nào làm ib mình trao đổi nhé Cộng đồng n8n ",
+          "snippet": "ờ · Mình cần workflow để làm các dạng clip này. Idea của mình —> kịch bản —> hình ảnh/ clip minh hoạ —> Sub text —> Voice Bạn nào làm ib mình trao đổi nhé Mình cần workflow để làm các dạng clip này. Idea của mình —> kịch bản —> hình ảnh/ clip minh hoạ —> Sub text —> Voice Bạn nào làm ib mình trao đổi nhé Cộng đồng n8n ",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yv/r/QgSPOmVJB_Z.webp",
+            "https://static.xx.fbcdn.net/rsrc.php/yJ/r/9IJioPU0OFV.webp"
+          ],
+          "imageCount": 2
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "1953768764898561",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "4333882826887131",
+          "url": "https://www.facebook.com/groups/1953768764898561/posts/4333882826887131/",
+          "author": "Minh Luân Vinhomes",
+          "timeText": "",
+          "content": "Người đóng góp đang lên · ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "snippet": "Người đóng góp đang lên · ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yu/r/bWKbCk8tN0y.webp",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650738034_2018815239065080_432758525127254592_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=D9FsktZgm_cQ7kNvwECYuT0&_nc_oc=AdldnSSUBmm-7JnL4TdaWUI0Xlz6rKfth6krovuKa9stcrMtPT3phCRIU3cQHWQtQvvxa0W8q9n-i2Y6d0RbNKDV&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=qbjUR6zVECfrabHqDU_roQ&_nc_ss=8&oh=00_AfxFEgCyrYpAlkmpdXYjIjFKaDhlgVLRPVYQ4BQVGyMwfg&oe=69B8AADC",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650487908_2018815285731742_6418128436617760539_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=SDC8ZtJJbkwQ7kNvwFpbjFQ&_nc_oc=Adk2YtcOOgNRBfV-UKlNUeSOaRB8DjgZLtMzSWGuPUU_nHTi8DxXPy8EPC7tYjwOnuJ4GsblXxxagsl4GuDPfPpl&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=qbjUR6zVECfrabHqDU_roQ&_nc_ss=8&oh=00_AfwbRUcGtT6kvciI-M4R2YPThuami3N-nB9J_rDJL2DXQw&oe=69B8D450",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650925253_2018815329065071_972007429650632842_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=-5q_5hckjb4Q7kNvwFdwGKX&_nc_oc=AdktJBz9bGGCWXrYWzjz9yhMTDzVIiHKQ-AZoFoSWTkoQVNwl0o2dzPZ__MXvVWKWvYWYFAUg3rR0BOOCsPvd3cO&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=qbjUR6zVECfrabHqDU_roQ&_nc_ss=8&oh=00_Afy7X-RqlXgNYy3ZJ6QEdeTMziqw8n1xqCnES2utWkR77A&oe=69B8C073",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650989682_2018815339065070_2997373700947554314_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=CHMsjWbLm6sQ7kNvwFBqUvI&_nc_oc=Adn4fIy-Dd0BgSWA6hYBZLeArHRv-kqRycauSt3piyqfhp6mYgebFGzKexs5McTjHr3OBSypeEIB7GUHdZm460sj&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=qbjUR6zVECfrabHqDU_roQ&_nc_ss=8&oh=00_AfwAOpQmqkrDbKCRGQX_WhXbkf0sO-kZcoiGP2JZda-Yhg&oe=69B8D853",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649999677_2018815242398413_1842245507874513633_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=S4WoGTczBssQ7kNvwFNZM7q&_nc_oc=Adk4e0r1mw_npnjgG5ujwb1eVGV0dEorCsQXvfCJRvuS4eVGiktzZvZPiRSS4fUYbCj2WlKOzO6dvu5QmomfC_5I&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=qbjUR6zVECfrabHqDU_roQ&_nc_ss=8&oh=00_AfxSK_kF7oOIo4GGjCIl9jgIY32wmbzJoTlOCbvWOLP7dQ&oe=69B8B625"
+          ],
+          "imageCount": 6
+        },
+        {
+          "postId": "2967297286804146",
+          "url": "https://www.facebook.com/groups/1953768764898561/posts/2967297286804146/",
+          "author": "Minh Trường",
+          "timeText": "",
+          "content": "ú · Minh Trường ú t á : 2 g l · 𝐂𝐇𝐎 𝐓𝐇𝐔Ê 𝐂𝐇𝐔𝐍𝐆 𝐂Ư 𝐕𝐈𝐍𝐇𝐎𝐌𝐄𝐒 𝐆𝐑𝐀𝐍𝐃𝐏𝐀𝐑𝐊 𝐐𝐔Ậ𝐍 𝟗 0357173329- Giang 𝑪𝑨̆𝑵 𝑺𝑻𝑼𝑫𝑰𝑶 : Xem thêm dưới tên Thông",
+          "snippet": "ú · Minh Trường ú t á : 2 g l · 𝐂𝐇𝐎 𝐓𝐇𝐔Ê 𝐂𝐇𝐔𝐍𝐆 𝐂Ư 𝐕𝐈𝐍𝐇𝐎𝐌𝐄𝐒 𝐆𝐑𝐀𝐍𝐃𝐏𝐀𝐑𝐊 𝐐𝐔Ậ𝐍 𝟗 0357173329- Giang 𝑪𝑨̆𝑵 𝑺𝑻𝑼𝑫𝑰𝑶 : Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/640374293_122121318411106966_3211801613666106146_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=j1T_5eBGsJkQ7kNvwGHKjq5&_nc_oc=AdnRR4fyQlUnxryaSPbKaBxtmHEn5LMZF2ASrudlU8cDYZ_osVf4PXt7gkagfjl5lleySo3NNhLohITakmNQpdhv&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=rcC31zMnz9gh4Uuvi0kXhw&_nc_ss=8&oh=00_AfzyRuMgrSMvqN4KDwBCtC7C69yCHyKTrBWmv-2v4Yz__Q&oe=69B8C539",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t22/1/16/260e.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t37/1/16/1f38d.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tf6/1/16/1f3e0.png"
+          ],
+          "imageCount": 4
+        },
+        {
+          "postId": "26202666376091229",
+          "url": "https://www.facebook.com/groups/1953768764898561/posts/26202666376091229/",
+          "author": "Minh Trường",
+          "timeText": "",
+          "content": "ú · Minh Trường ờ · CHO THUÊ VINHOMES GRAND PARK Q9 1PN+ RÈM , sẵn 2 máy lạnh Giá Thuê : 4,8 triệu / tháng. Xem thêm dưới tên Thông",
+          "snippet": "ú · Minh Trường ờ · CHO THUÊ VINHOMES GRAND PARK Q9 1PN+ RÈM , sẵn 2 máy lạnh Giá Thuê : 4,8 triệu / tháng. Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650727591_122123495421106966_7566529584603541795_n.jpg?stp=dst-jpg_p417x417_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=ify3-0hkZHQQ7kNvwHDmGV0&_nc_oc=Adl6Pd_7hhRBVALW4KHKy-vDqKXPzNpt9eU8gqOKdodXPumhOMq0XlLL-zbSZ5S0PlspP9fuGo3kaWsmBLkEAxMb&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=rcC31zMnz9gh4Uuvi0kXhw&_nc_ss=8&oh=00_AfyEVWkn4kkRH8W16Y8E-seUplrY-AkVjbvMCVPi5uKfkw&oe=69B8C8E5",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649941067_122123495427106966_4531161062746740796_n.jpg?stp=dst-jpg_p417x417_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=J-I3hsX2oT0Q7kNvwG6R1ZV&_nc_oc=AdmGMjxPrMvdjP63uB1d6vmLWMgU-_CDbeFzDO2eMRE2Y92ZL0JObVw7P2xafxh4n52kEsamo-vBFnUc231aPI2t&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=rcC31zMnz9gh4Uuvi0kXhw&_nc_ss=8&oh=00_AfxZRJtG0Kx4pjDQ_HF34GcPWXTDMRYIHO7pTzrDRXvxDQ&oe=69B8B8BE",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t60/1/20/1f340.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png"
+          ],
+          "imageCount": 4
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "canhovhgpthuduc",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "3696685147138474",
+          "url": "https://www.facebook.com/groups/canhovhgpthuduc/posts/3696685147138474/",
+          "author": "Minh Luân Vinhomes",
+          "timeText": "",
+          "content": "ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "snippet": "ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650738034_2018815239065080_432758525127254592_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=D9FsktZgm_cQ7kNvwECYuT0&_nc_oc=AdldnSSUBmm-7JnL4TdaWUI0Xlz6rKfth6krovuKa9stcrMtPT3phCRIU3cQHWQtQvvxa0W8q9n-i2Y6d0RbNKDV&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=8Im1tNYfDZAPNgRVxmywRA&_nc_ss=8&oh=00_AfzhleCDGZUWRGaAzTh6sdOdg4p_sht1eBL7fszkPNEVHQ&oe=69B8AADC",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650487908_2018815285731742_6418128436617760539_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=SDC8ZtJJbkwQ7kNvwFpbjFQ&_nc_oc=Adk2YtcOOgNRBfV-UKlNUeSOaRB8DjgZLtMzSWGuPUU_nHTi8DxXPy8EPC7tYjwOnuJ4GsblXxxagsl4GuDPfPpl&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=8Im1tNYfDZAPNgRVxmywRA&_nc_ss=8&oh=00_AfzRc_j2bgbyCQQfLWvZnAUrTPqAlmBJc1J5NBHsWxua-Q&oe=69B8D450",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650925253_2018815329065071_972007429650632842_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=-5q_5hckjb4Q7kNvwFdwGKX&_nc_oc=AdktJBz9bGGCWXrYWzjz9yhMTDzVIiHKQ-AZoFoSWTkoQVNwl0o2dzPZ__MXvVWKWvYWYFAUg3rR0BOOCsPvd3cO&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=8Im1tNYfDZAPNgRVxmywRA&_nc_ss=8&oh=00_Afy79NFHcmbM7k6ojYMY5TiJryH7O1HmLM9j81p8xyhFPg&oe=69B8C073",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650989682_2018815339065070_2997373700947554314_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=CHMsjWbLm6sQ7kNvwFBqUvI&_nc_oc=Adn4fIy-Dd0BgSWA6hYBZLeArHRv-kqRycauSt3piyqfhp6mYgebFGzKexs5McTjHr3OBSypeEIB7GUHdZm460sj&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=8Im1tNYfDZAPNgRVxmywRA&_nc_ss=8&oh=00_AfwJzLgJTKdCM1hqqep_jNn_n2nfFOkZsOBTJn_4mn4c8Q&oe=69B8D853",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649999677_2018815242398413_1842245507874513633_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=S4WoGTczBssQ7kNvwFNZM7q&_nc_oc=Adk4e0r1mw_npnjgG5ujwb1eVGV0dEorCsQXvfCJRvuS4eVGiktzZvZPiRSS4fUYbCj2WlKOzO6dvu5QmomfC_5I&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=8Im1tNYfDZAPNgRVxmywRA&_nc_ss=8&oh=00_AfweAVOocXWQpm--PtCsMlQlVFwHMfRTLy_KEH389h30xQ&oe=69B8B625"
+          ],
+          "imageCount": 5
+        },
+        {
+          "postId": "2967297286804146",
+          "url": "https://www.facebook.com/groups/canhovhgpthuduc/posts/2967297286804146/",
+          "author": "Minh Trường",
+          "timeText": "",
+          "content": "ú · Minh Trường ú 8 2 1 4 : á 9 a · 𝐂𝐇𝐎 𝐓𝐇𝐔Ê 𝐂𝐇𝐔𝐍𝐆 𝐂Ư 𝐕𝐈𝐍𝐇𝐎𝐌𝐄𝐒 𝐆𝐑𝐀𝐍𝐃𝐏𝐀𝐑𝐊 𝐐𝐔Ậ𝐍 𝟗 0357173329- Giang 𝑪𝑨̆𝑵 𝑺𝑻𝑼𝑫𝑰𝑶 : Xem thêm dưới tên Thông",
+          "snippet": "ú · Minh Trường ú 8 2 1 4 : á 9 a · 𝐂𝐇𝐎 𝐓𝐇𝐔Ê 𝐂𝐇𝐔𝐍𝐆 𝐂Ư 𝐕𝐈𝐍𝐇𝐎𝐌𝐄𝐒 𝐆𝐑𝐀𝐍𝐃𝐏𝐀𝐑𝐊 𝐐𝐔Ậ𝐍 𝟗 0357173329- Giang 𝑪𝑨̆𝑵 𝑺𝑻𝑼𝑫𝑰𝑶 : Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/640374293_122121318411106966_3211801613666106146_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=j1T_5eBGsJkQ7kNvwGHKjq5&_nc_oc=AdnRR4fyQlUnxryaSPbKaBxtmHEn5LMZF2ASrudlU8cDYZ_osVf4PXt7gkagfjl5lleySo3NNhLohITakmNQpdhv&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=m7BO7hh6y8S0M--1FaDyeA&_nc_ss=8&oh=00_AfwOr789JYOrpaKv-tasnb9jBd8usPvcuuVdQLMuNpvK8w&oe=69B8C539",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t22/1/16/260e.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t37/1/16/1f38d.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tf6/1/16/1f3e0.png"
+          ],
+          "imageCount": 4
+        },
+        {
+          "postId": "3696681747138814",
+          "url": "https://www.facebook.com/groups/canhovhgpthuduc/posts/3696681747138814/",
+          "author": "Căn hộ Vinhomes Grand Park",
+          "timeText": "",
+          "content": "ú · TÌM 2PN VỪA TÀI CHÍNH – ĐẸP VIEW – Ở NGAY?… Xem thêm dưới tên Thông",
+          "snippet": "ú · TÌM 2PN VỪA TÀI CHÍNH – ĐẸP VIEW – Ở NGAY?… Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t77/1/16/1f3e1.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651318601_122164567556398977_9073984903263756660_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=eP955a8aUloQ7kNvwG3s01w&_nc_oc=AdniPeL0fwKxR0OR9PBgGPF6taxqux7uUIFJbPlb5RUhCJo4Zp1W8hlGC9Y-MIe5E6yg1cqd9TXYvF89PFkaaHeY&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=m7BO7hh6y8S0M--1FaDyeA&_nc_ss=8&oh=00_AfwOtEeAG9SGYx3fWhlsRogXyRpxWb3PuYWzEeoSRaqWtw&oe=69B8A68C",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651156488_122164567610398977_6616843684274372577_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=_0METvwxwqsQ7kNvwGsGG-a&_nc_oc=Admhiv2-sbwaCdD7qsuFo9rcbWbU-4yXl1F3o7kEFvPtkECaqPTpjIlNyGZaaSdgC3xgEX1VB5IquxQZjPd7FhUo&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=m7BO7hh6y8S0M--1FaDyeA&_nc_ss=8&oh=00_Afz5JQs0F5K8OWUgUnwOKeGuTVFrPZqoGnM3zlBqCMr9eA&oe=69B8BDDB",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651412561_122164567664398977_6729321778586827928_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=RuDZ3bpR1g8Q7kNvwFa_-QK&_nc_oc=AdmDeefgB8JpNxTqa4Qt3fZjZ--_6l0wNMGPwsLEZQK1V7qIaJsNmQQJ5m6Hh2tPTra8pC62bbYF-cJsWx4mXmMd&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=m7BO7hh6y8S0M--1FaDyeA&_nc_ss=8&oh=00_AfzDgWA1n_0PhtyOXql7JHtJ9qEnL0Rud2Fg-vyHbDW6iA&oe=69B8BC01",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651000243_122164567718398977_2870423788695719773_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=c3FdxZ0l07wQ7kNvwEFMXjI&_nc_oc=AdnNNzEXQuyaJR15kPh3sNSYvPnku9Kdvw4tyB3HWrzEOyThae6JsiXyYRdXeo3ZCKymhBvcVWAOP-AMI-Wo6qsQ&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=m7BO7hh6y8S0M--1FaDyeA&_nc_ss=8&oh=00_AfyquuvTUtiGxWza4BfjpwlufE8p7ci_yQo9Itl8hQmRYw&oe=69B8D6B9"
+          ],
+          "imageCount": 5
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "1253003428939928",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "1658005208439746",
+          "url": "https://www.facebook.com/groups/1253003428939928/posts/1658005208439746/",
+          "author": "Minh Luân Vinhomes",
+          "timeText": "",
+          "content": "ừ · Cho thuê căn 2PN 2WC bếp rèm, tủ. Khu Ori - Giứ 6tr5 - Lh: 0961140822 Vinhomes Grand Park dưới tên Thông",
+          "snippet": "ừ · Cho thuê căn 2PN 2WC bếp rèm, tủ. Khu Ori - Giứ 6tr5 - Lh: 0961140822 Vinhomes Grand Park dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650103183_2018820225731248_1970964313403902444_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=3BgryRlaqUwQ7kNvwFxBFLT&_nc_oc=AdlpcMvf2RtFYyhK1LcIGPVQjQ1R0gtZ81l_PS9jz5NvTcyTEZRjyezEPelSq4ASQoyTwtOku4pjqQJx_XUZdTiX&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=KoxWXcVxbRXMIyuMmQtkdQ&_nc_ss=8&oh=00_AfwM5Qkuyf6XzcuZlxnSg5K_6RITRQmepdZVFuqiiPW3DA&oe=69B8D34E",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649274135_2018820249064579_7777350767983041586_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=ynUEWTq82IAQ7kNvwGoMz2T&_nc_oc=AdnO-KMWesc8J4li6s9IyRBDbkCV436PoK2EUscNk3NYM-ZbA4sE760kyTSwDaUGI6KETPY0GvShPfZce8RFusGm&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=KoxWXcVxbRXMIyuMmQtkdQ&_nc_ss=8&oh=00_Afxd1kfLDuGIATOUml1J11cyp2xCb74EqmpeSZSMlwk53w&oe=69B8C3BA",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649848849_2018820229064581_6731689857634236067_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=7bHq1rK3BNYQ7kNvwHx45_-&_nc_oc=Adk0-ktrCFmV5ymJnY-YG9Jxx_KwJccp5Gfsys9pDTbxbRghTvTJKVWd3JM4qr9f1FS0hthU71IiCHtQ3Sdv6KkI&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=KoxWXcVxbRXMIyuMmQtkdQ&_nc_ss=8&oh=00_Afzp45uNXvG8o3QWqPpD6MYVPtf1YkowSENMgknficaenQ&oe=69B8D009",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650316600_2018820255731245_4480250470897747045_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=bbfJXoVKIvsQ7kNvwEzN-KW&_nc_oc=AdnpNDoUBJlSJ79GNtx_PldQlQDNpoG3J3296JU_7ZRPx3BFS2pLjCM7idcTCZ7yESLZ-rHhYZWBJ2sdNBSREkLg&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=KoxWXcVxbRXMIyuMmQtkdQ&_nc_ss=8&oh=00_Afy02Fc8luVCNQop1Rqd4ftWtZ2fBZ2bgEDL8Tw5uwc6Zg&oe=69B8BFBA"
+          ],
+          "imageCount": 4
+        },
+        {
+          "postId": "1657992465107687",
+          "url": "https://www.facebook.com/groups/1253003428939928/posts/1657992465107687/",
+          "author": "Minh Luân Vinhomes",
+          "timeText": "",
+          "content": "ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "snippet": "ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650830737_2018814569065147_646533117654189841_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=HyQmcsxPtjkQ7kNvwGBStJL&_nc_oc=AdlWdwl6neBRbDgKsYPC8c2NWZAYpdMnMtysRfKZHzYvkRu8VaYzxoHMBLTGxgImGdOHeuhJtONDOnNCPuDJP5aX&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_Afxu-JVgMsqV164NIRNBDN6uFJqPMfkacHzkCogek7-XFw&oe=69B8D753",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651005150_2018814565731814_2863070547195298409_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=TFnd-ormchwQ7kNvwGbtMYl&_nc_oc=AdnCJrMh3mXLFnhxlbV6dcl-Tq8nrt6iupe5_VLLIjzjAIEHxcoMsSjIQXRe-V58gD4Nxd-gtWQScND3PWR7niFc&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_Afxg9kY6BMu9kKNgdUZtw184mnC1ODt3UWtUacd7zxMyhg&oe=69B8AF1B",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649552426_2018814659065138_4418954444876372984_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=c6lVsr6UgzEQ7kNvwF1Sf4t&_nc_oc=AdmqD5CuZ0A5W-7Dz_vgMaHk4GjRiwu6HpGE8M5Jc-LigKe0yM9OyrumfOnBIq6ykZ3dFrOMZV7rStvdkliTIQox&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_AfxSfUSoIyNOG6Rqr019oDfolIRe5bUwX24tpnridKDLWQ&oe=69B8A7A4",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651174730_2018814589065145_8488538743733908801_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=F0VKoIZxjUEQ7kNvwHk1ufQ&_nc_oc=AdkajbVirCmHuYfhkGEoJ0AZT3CNSdic5uTqGnZggXeGD1HnDL5QNtOUQz3Rt0CIJ1n6w1wVjDmmf9kL-qPq8AFz&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_AfzH8R0X8PZVXJ-LYC3P8oOtUDKyFbCq_Q4rK2OmF2y3hA&oe=69B8B442",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651016058_2018814672398470_3106525259722935777_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=lQ1Spoxms0wQ7kNvwEJNxmw&_nc_oc=AdnktQBdAyyPaLlVW8C99SHQQjuCdxMpqyPfqGFX0hXI45KHj7e8l2ulvnKVojSCj-YzPy5wT8uZKC4wj9DOE--F&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_AfypkSqxibxtDxd50WL8s3VmeikMAYFJlh-aMZi9ewFB_Q&oe=69B8BFB2"
+          ],
+          "imageCount": 5
+        },
+        {
+          "postId": "1657990478441219",
+          "url": "https://www.facebook.com/groups/1253003428939928/posts/1657990478441219/",
+          "author": "Diễm Trinh",
+          "timeText": "",
+          "content": "ú · CHO THUÊ VINHOMES GRAND PARK Q9 2PN2W 67m2 BẾP RÈM , sẵn 3 máy lạnh Giá Thuê : 7,5 triệu / tháng. Xem thêm dưới tên Thông",
+          "snippet": "ú · CHO THUÊ VINHOMES GRAND PARK Q9 2PN2W 67m2 BẾP RÈM , sẵn 3 máy lạnh Giá Thuê : 7,5 triệu / tháng. Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t60/1/20/1f340.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650012575_1624699022287990_3794969461330619552_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=dviZEQN3Y90Q7kNvwGxlhB7&_nc_oc=AdkBHI8CK7GS9yRfBq3NHVI1NfIRX5dpDztWyc7qlsj8pAMXy1Ghh6w2kC8OnEksWjK1NSe93uz_xapgiFuElk96&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_AfzqX8NPn66RPB18YvI9j4G7tp9qXPW2klECkynIqi-aLQ&oe=69B8C23F",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649377356_1624699032287989_6867370680970722808_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=cJmqI6_ckpAQ7kNvwHzE_zh&_nc_oc=AdlYE_C07FIp5C_HWPXey54vqSaGe8XtPXJl9u9mzo6Ch9ClrpcZKh4UWSVIOY070zPQ9KYZkoy8_sB2upQQnPqE&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_AfwRrR-7C3_r4F1Q3U7jHSQiW5FqidlRB6wkoBNwtGJ5rA&oe=69B8BE24",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649145614_1624699052287987_2280378301391089376_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=peJP7Sv6e9AQ7kNvwG2qlWH&_nc_oc=Admv41bfL7ITnG5FtDv59QT2DGh_vnGcvpcgjwgESYEfMRogl1QuQYxxbfOaBAFCR0yjFXGILfkzxUZ5k4xREbsU&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_Afw6c59wmjoLpn0mv2blfLSKDV2fIaOKMqFMmtF0vrCsUw&oe=69B8C778",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/648939311_1624699058954653_2620736333167612409_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=Yc7qj_-REX4Q7kNvwHZlWvz&_nc_oc=AdkhaeVVvLNOfyEagDwBDEDxpY655i7XeSqNV_KXWLuWhWSVGBT8rC8qCBGIu0Yaq2Ry9BLtoLYQAgly55yeMB_0&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=efs0Mo4gjb2NlNS1_np1Kg&_nc_ss=8&oh=00_AfyzvKDcgQYEzcKkEB8dRkAnyXTbWIVGZKWt0LsXk-WB2Q&oe=69B8C460"
+          ],
+          "imageCount": 6
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "843936324120052",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "1250112676835746",
+          "url": "https://www.facebook.com/groups/843936324120052/posts/1250112676835746/",
+          "author": "Minh Luân Vinhomes",
+          "timeText": "",
+          "content": "ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "snippet": "ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650738034_2018815239065080_432758525127254592_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=D9FsktZgm_cQ7kNvwECYuT0&_nc_oc=AdldnSSUBmm-7JnL4TdaWUI0Xlz6rKfth6krovuKa9stcrMtPT3phCRIU3cQHWQtQvvxa0W8q9n-i2Y6d0RbNKDV&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=6v0hg3pvCjMZCP5UrSlEFg&_nc_ss=8&oh=00_AfwATT1Qos__rzBw48IKsfPXXiPMzfQ78KFglLIyQqIQzw&oe=69B8AADC",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650487908_2018815285731742_6418128436617760539_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=SDC8ZtJJbkwQ7kNvwFpbjFQ&_nc_oc=Adk2YtcOOgNRBfV-UKlNUeSOaRB8DjgZLtMzSWGuPUU_nHTi8DxXPy8EPC7tYjwOnuJ4GsblXxxagsl4GuDPfPpl&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=6v0hg3pvCjMZCP5UrSlEFg&_nc_ss=8&oh=00_Afx03HwLxlLXmI7R1iohCHI_58DQypjHp-949wRKJSoXUg&oe=69B8D450",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650925253_2018815329065071_972007429650632842_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=-5q_5hckjb4Q7kNvwFdwGKX&_nc_oc=AdktJBz9bGGCWXrYWzjz9yhMTDzVIiHKQ-AZoFoSWTkoQVNwl0o2dzPZ__MXvVWKWvYWYFAUg3rR0BOOCsPvd3cO&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=6v0hg3pvCjMZCP5UrSlEFg&_nc_ss=8&oh=00_Afxn49kOH2K1XP_NCBho1yRyANBf2hHvSkFEmAEwl2pPRg&oe=69B8C073",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650989682_2018815339065070_2997373700947554314_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=CHMsjWbLm6sQ7kNvwFBqUvI&_nc_oc=Adn4fIy-Dd0BgSWA6hYBZLeArHRv-kqRycauSt3piyqfhp6mYgebFGzKexs5McTjHr3OBSypeEIB7GUHdZm460sj&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=6v0hg3pvCjMZCP5UrSlEFg&_nc_ss=8&oh=00_AfwfIyrSu5eOTD-gJu2Dg_dYUkD4CzQCqC_N9zwk4XTGlQ&oe=69B8D853",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649999677_2018815242398413_1842245507874513633_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=S4WoGTczBssQ7kNvwFNZM7q&_nc_oc=Adk4e0r1mw_npnjgG5ujwb1eVGV0dEorCsQXvfCJRvuS4eVGiktzZvZPiRSS4fUYbCj2WlKOzO6dvu5QmomfC_5I&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=6v0hg3pvCjMZCP5UrSlEFg&_nc_ss=8&oh=00_AfzE-igVe99mpUOPhlR2Qbvl_rmnH_B9KDlcZ1PmJzYhww&oe=69B8B625"
+          ],
+          "imageCount": 5
+        },
+        {
+          "postId": "2967297286804146",
+          "url": "https://www.facebook.com/groups/843936324120052/posts/2967297286804146/",
+          "author": "Minh Trường",
+          "timeText": "",
+          "content": "ú · Minh Trường á ú : 3 m 0 5 1 i f · 𝐂𝐇𝐎 𝐓𝐇𝐔Ê 𝐂𝐇𝐔𝐍𝐆 𝐂Ư 𝐕𝐈𝐍𝐇𝐎𝐌𝐄𝐒 𝐆𝐑𝐀𝐍𝐃𝐏𝐀𝐑𝐊 𝐐𝐔Ậ𝐍 𝟗 0357173329- Giang 𝑪𝑨̆𝑵 𝑺𝑻𝑼𝑫𝑰𝑶 : Xem thêm dưới tên Thông",
+          "snippet": "ú · Minh Trường á ú : 3 m 0 5 1 i f · 𝐂𝐇𝐎 𝐓𝐇𝐔Ê 𝐂𝐇𝐔𝐍𝐆 𝐂Ư 𝐕𝐈𝐍𝐇𝐎𝐌𝐄𝐒 𝐆𝐑𝐀𝐍𝐃𝐏𝐀𝐑𝐊 𝐐𝐔Ậ𝐍 𝟗 0357173329- Giang 𝑪𝑨̆𝑵 𝑺𝑻𝑼𝑫𝑰𝑶 : Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/640374293_122121318411106966_3211801613666106146_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=j1T_5eBGsJkQ7kNvwGHKjq5&_nc_oc=AdnRR4fyQlUnxryaSPbKaBxtmHEn5LMZF2ASrudlU8cDYZ_osVf4PXt7gkagfjl5lleySo3NNhLohITakmNQpdhv&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nROdo0v3kh7ao9lqd13jxA&_nc_ss=8&oh=00_AfwbfRkym8uQev1YTClOIt2yk949zkchukIRkEfITYKijg&oe=69B8C539",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t22/1/16/260e.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t37/1/16/1f38d.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tf6/1/16/1f3e0.png"
+          ],
+          "imageCount": 4
+        },
+        {
+          "postId": "26202666376091229",
+          "url": "https://www.facebook.com/groups/843936324120052/posts/26202666376091229/",
+          "author": "Minh Trường",
+          "timeText": "",
+          "content": "ú · Minh Trường ờ · CHO THUÊ VINHOMES GRAND PARK Q9 1PN+ RÈM , sẵn 2 máy lạnh Giá Thuê : 4,8 triệu / tháng. Xem thêm dưới tên Thông",
+          "snippet": "ú · Minh Trường ờ · CHO THUÊ VINHOMES GRAND PARK Q9 1PN+ RÈM , sẵn 2 máy lạnh Giá Thuê : 4,8 triệu / tháng. Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650727591_122123495421106966_7566529584603541795_n.jpg?stp=dst-jpg_p417x417_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=ify3-0hkZHQQ7kNvwHDmGV0&_nc_oc=Adl6Pd_7hhRBVALW4KHKy-vDqKXPzNpt9eU8gqOKdodXPumhOMq0XlLL-zbSZ5S0PlspP9fuGo3kaWsmBLkEAxMb&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nROdo0v3kh7ao9lqd13jxA&_nc_ss=8&oh=00_AfzZ_0MSjtNPhCswTAlCj59-HuiCsVN7m7GCHQjAcNUnmw&oe=69B8C8E5",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649941067_122123495427106966_4531161062746740796_n.jpg?stp=dst-jpg_p417x417_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=J-I3hsX2oT0Q7kNvwG6R1ZV&_nc_oc=AdmGMjxPrMvdjP63uB1d6vmLWMgU-_CDbeFzDO2eMRE2Y92ZL0JObVw7P2xafxh4n52kEsamo-vBFnUc231aPI2t&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nROdo0v3kh7ao9lqd13jxA&_nc_ss=8&oh=00_Afx9pN9P45hz1fJCnyiekUUAizi2GyHnP93F1dIgHDmJPw&oe=69B8B8BE",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t60/1/20/1f340.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t51/1/16/1f449.png"
+          ],
+          "imageCount": 4
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "197773610041069",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "833545593130531",
+          "url": "https://www.facebook.com/groups/197773610041069/posts/833545593130531/",
+          "author": "My Tram Le",
+          "timeText": "",
+          "content": "ú · VINHOMES GRAND PARK QUẬN 9 Cho thuê căn 2PN+ giá 6.8tr, nội thất bếp rèn, 2 tủ quần áo, máy nước nóng , Toà S1.07 tầng trung View thoáng, Bancol hướng ĐN đón nắng sớm, mát cả ngày. Xem thêm 1 1 dưới tên Thông",
+          "snippet": "ú · VINHOMES GRAND PARK QUẬN 9 Cho thuê căn 2PN+ giá 6.8tr, nội thất bếp rèn, 2 tủ quần áo, máy nước nóng , Toà S1.07 tầng trung View thoáng, Bancol hướng ĐN đón nắng sớm, mát cả ngày. Xem thêm 1 1 dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t2a/1/20/1f449.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t1c/1/16/1f6d2.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tf6/1/16/1f3e0.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649762645_1471471734704156_5143337336629025051_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=iB2pgmuqTFEQ7kNvwGWdpMI&_nc_oc=AdmAKtRGrv9j9Vz_6bGJXC3UNr_ISwmRalaKz18eQq5x-WZTPn1fu2QPYEdygK5KXi2oHdPUWu4uS__B3KCieqaA&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=HdPZ-ATuXESeUVFX-N3zPA&_nc_ss=8&oh=00_AfxNnBDpsrT9ywVjq9pzlxJ6BDKos6cGBefza3-L-ulgGA&oe=69B8C332",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649794682_1471471781370818_8378717322065772838_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=LIhk0finyMAQ7kNvwHEzlHs&_nc_oc=AdlQvLdqkkYS_kb1tNriW7RIJ_fs-DfjgweaUmsVmUA1cIzh4_6eKnUS4_8JMXkn-4wdJgAL8bxkAoTtRuZtJvHk&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=HdPZ-ATuXESeUVFX-N3zPA&_nc_ss=8&oh=00_Afz-yo9PF1qRsMWba1LujvdCcXuDzowSjahmROk8bBzKrA&oe=69B8B31F",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650895216_1471471858037477_6797528331268538176_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=bVnNldfTImIQ7kNvwE4-I0o&_nc_oc=AdlQTX8VaJlQ7cnBnfa9fsROOxK0irqyYJoGJk3l4rhZ5wu3ZP9-QKM2tpjWKdOlZGVv83Spb-zHFypr_bGmCW9U&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=HdPZ-ATuXESeUVFX-N3zPA&_nc_ss=8&oh=00_AfzTh82eSqeDGYU_yMSw7SWwcRltd6d6eNZGyxOV7DNYNQ&oe=69B8C439",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650924860_1471471898037473_4914906419755789379_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=VsunmVT-2YkQ7kNvwFvj72g&_nc_oc=AdlZl_3tbVAYPwEPxbROB09HpYX6p4VKfnHq-qxOnIjIM5Qag-qAr1vuguMPEfnFkTBWK1MnEK4QmQcG2fsc7wG4&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=HdPZ-ATuXESeUVFX-N3zPA&_nc_ss=8&oh=00_AfyOFafrKHBRKJXRwyRYGxTnsjR3yRZwtsohUlLNL17CKg&oe=69B8C9BC",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650974905_1471471958037467_2807715001030871910_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=RAouAE2SobAQ7kNvwFIY2ZA&_nc_oc=AdkfBQHbZ9-rkJLjZNqV1KoFWiD6I9Yn_wuYRxXgS_QsvdT7e0ugtEf5WewU9PZg5UurO3DAYSdSlxfggDfn93YB&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=HdPZ-ATuXESeUVFX-N3zPA&_nc_ss=8&oh=00_AfzEP6cIgH0KVmDFaQZ4kExR3YOWZ_-VyOCBtd3xap0vQw&oe=69B8C98C"
+          ],
+          "imageCount": 8
+        },
+        {
+          "postId": "833545286463895",
+          "url": "https://www.facebook.com/groups/197773610041069/posts/833545286463895/",
+          "author": "Thu Ba Đoàn",
+          "timeText": "",
+          "content": "ú · Pickleball tháng 3/2026 – Nhận học viên mới HLV kinh nghiệm nhiều năm, dạy đúng kỹ thuật từ đầu. Phù hợp người mới & nâng cao. Vinhomes Grand Park – Thủ Đức 0968 030 921 dưới tên Thông",
+          "snippet": "ú · Pickleball tháng 3/2026 – Nhận học viên mới HLV kinh nghiệm nhiều năm, dạy đúng kỹ thuật từ đầu. Phù hợp người mới & nâng cao. Vinhomes Grand Park – Thủ Đức 0968 030 921 dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/ta7/1/20/1f3be.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t2d/1/16/1f4cd.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/td8/1/16/1f4f2.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651225916_4225689744336700_7972226211373035544_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=uPSgSJBCQmYQ7kNvwGQ4u4h&_nc_oc=Adn0CrgMS7AqwVL6RcL9psycwoDZYKazgofuikmUNlHDCWZiCqAV4waUI-gHGXXGpMxoV8EjpZiWhWz3q_NqlPMN&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=w6l2sdJK_XvpKiMDNKjrIw&_nc_ss=8&oh=00_Afw8VfKwP5QRJHzonWAh6uHuaAxcfFg2o_9SvJdGca7l1A&oe=69B8C8E2",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tce/1/16/1f3be.png"
+          ],
+          "imageCount": 5
+        },
+        {
+          "postId": "833545103130580",
+          "url": "https://www.facebook.com/groups/197773610041069/posts/833545103130580/",
+          "author": "Minh Luân Vinhomes",
+          "timeText": "",
+          "content": "Người đóng góp đang lên · ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "snippet": "Người đóng góp đang lên · ú · Cho thuê căn 1PN+ bếp rèm. Khu GH3 - Giá 6tr5 cọc 1 - LH; 0961140822 Vinhomes Grand Park +2 dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/rsrc.php/yu/r/bWKbCk8tN0y.webp",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650830737_2018814569065147_646533117654189841_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=HyQmcsxPtjkQ7kNvwGBStJL&_nc_oc=AdlWdwl6neBRbDgKsYPC8c2NWZAYpdMnMtysRfKZHzYvkRu8VaYzxoHMBLTGxgImGdOHeuhJtONDOnNCPuDJP5aX&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=w6l2sdJK_XvpKiMDNKjrIw&_nc_ss=8&oh=00_Afx_W81euTYZ166jLH_9ATomRYjBphdzCwR_OVCsZZiyrg&oe=69B8D753",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651005150_2018814565731814_2863070547195298409_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=TFnd-ormchwQ7kNvwGbtMYl&_nc_oc=AdnCJrMh3mXLFnhxlbV6dcl-Tq8nrt6iupe5_VLLIjzjAIEHxcoMsSjIQXRe-V58gD4Nxd-gtWQScND3PWR7niFc&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=w6l2sdJK_XvpKiMDNKjrIw&_nc_ss=8&oh=00_AfyL1qazo1x6tNnI00290I8DexT1jRaeIhn22BjBA-eVlw&oe=69B8AF1B",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649552426_2018814659065138_4418954444876372984_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=c6lVsr6UgzEQ7kNvwF1Sf4t&_nc_oc=AdmqD5CuZ0A5W-7Dz_vgMaHk4GjRiwu6HpGE8M5Jc-LigKe0yM9OyrumfOnBIq6ykZ3dFrOMZV7rStvdkliTIQox&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=w6l2sdJK_XvpKiMDNKjrIw&_nc_ss=8&oh=00_AfyhGLrrTS9stWV5AoOcBdQMamZYZ7gJR9eHkoP1sVYojQ&oe=69B8A7A4",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651174730_2018814589065145_8488538743733908801_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=F0VKoIZxjUEQ7kNvwHk1ufQ&_nc_oc=AdkajbVirCmHuYfhkGEoJ0AZT3CNSdic5uTqGnZggXeGD1HnDL5QNtOUQz3Rt0CIJ1n6w1wVjDmmf9kL-qPq8AFz&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=w6l2sdJK_XvpKiMDNKjrIw&_nc_ss=8&oh=00_AfzNFgMjphDUsjbB3KmP7JFLaRTqLN_OW_rQgpfs6-U8Sg&oe=69B8B442",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651016058_2018814672398470_3106525259722935777_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=lQ1Spoxms0wQ7kNvwEJNxmw&_nc_oc=AdnktQBdAyyPaLlVW8C99SHQQjuCdxMpqyPfqGFX0hXI45KHj7e8l2ulvnKVojSCj-YzPy5wT8uZKC4wj9DOE--F&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=w6l2sdJK_XvpKiMDNKjrIw&_nc_ss=8&oh=00_AfzpMTKVcew5tKFmdKotgnoJQIt4EUTJ296tRmzAXKQP6Q&oe=69B8BFB2"
+          ],
+          "imageCount": 6
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "chocudanvinhomeq9",
+      "count": 3,
+      "posts": [
+        {
+          "postId": "2217494539200852",
+          "url": "https://www.facebook.com/groups/chocudanvinhomeq9/posts/2217494539200852/",
+          "author": "Nguyễn Thị Hải",
+          "timeText": "",
+          "content": "ú · Cá tầm Đà Lạt sống nhà em về sẵn bể bơi tung tăng sống bơi đến tận nhà khách , hàng có sẵn cá sống mạnh, thịt chắc, thơm ngon .cá tầm sống #230k/ 1kg ( nguyên con 2kg đến 3kg) Xem thêm dưới tên Thông",
+          "snippet": "ú · Cá tầm Đà Lạt sống nhà em về sẵn bể bơi tung tăng sống bơi đến tận nhà khách , hàng có sẵn cá sống mạnh, thịt chắc, thơm ngon .cá tầm sống #230k/ 1kg ( nguyên con 2kg đến 3kg) Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651186628_1441142474479782_4438070281047448795_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=106&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=hvjHN5TpXZ8Q7kNvwGBNjkI&_nc_oc=AdmEZ9SQE902PRUEZVakpnV68k_0DP-UXdTUnunn4lBS3XnWJzBbCg8yx4v7Z8qPMgUECFoRiCarfmiINo6D3hKp&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=edYWY5S0tohI4KD3KdqL6Q&_nc_ss=8&oh=00_Afy3hxvF4UvGILU-8md3hhkMQGj0lHTE-hRFuTCyuRs8SQ&oe=69B8B8A2",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649502995_1441142521146444_3168050573174802115_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=IBXmM8NOXxIQ7kNvwGuahb4&_nc_oc=AdmB1Y62uK2T74nq6wPn-t0z2J346rb_RCVaVQbklMjNTcWefyP6MeXjGex54FflsZ4M9uPfciBAfzGV_bg2AqGU&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=edYWY5S0tohI4KD3KdqL6Q&_nc_ss=8&oh=00_AfwfgNayYEbRrvmg9T0T1nVm0dSHvKdSMWkfC8Oqzr5WFg&oe=69B8C10A",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650387432_1441142577813105_5078973701832182448_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=-w1WIRRtqdEQ7kNvwGfQmz9&_nc_oc=AdnUR67zOPllHoNSrBuIhlnUir1gLoPMClMzESHiW8Rf5JQ7HuvjMllraAvBMpIZglQ97C1VmT0C0ycVr2pooyAN&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=edYWY5S0tohI4KD3KdqL6Q&_nc_ss=8&oh=00_AfyyNl_DjixjJSJmjG5qoshNOdtElhDTBcVgvdsxQ1jZEA&oe=69B8B4AB"
+          ],
+          "imageCount": 3
+        },
+        {
+          "postId": "2217956319154674",
+          "url": "https://www.facebook.com/groups/chocudanvinhomeq9/posts/2217956319154674/",
+          "author": "Lam Anh",
+          "timeText": "",
+          "content": "· ú · TRƯA EM CÓ mình ăn thịt kho tàu mấy chế ơi Làm biếng nấu đồ ăn thì món này trữ là hợp lí Xem thêm dưới tên Thông",
+          "snippet": "· ú · TRƯA EM CÓ mình ăn thịt kho tàu mấy chế ơi Làm biếng nấu đồ ăn thì món này trữ là hợp lí Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t4c/1/16/25aa.png",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/t52/1/16/1f923.png",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649751284_933252139353754_1145821124843417526_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=X_9QTyS7rgUQ7kNvwFaAGCN&_nc_oc=AdmSiM3PACyEi9-k8dtyMxu7Gf-Vhjn3Ad43T9e-IUfF8oeZA-fOFpOmEQyD2g0NGB371FlwgR1TTZbHW6SvH6IJ&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfwyuxmwsQPaEbULJVilifTOb5zWcOEhHuODR2BjUkMuxg&oe=69B8CC18",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650312155_933252192687082_3295837906884762725_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=HjktWxd0Bf8Q7kNvwH1JGPF&_nc_oc=AdkoqR1hbmaos5FFoAfqQ2w_K_bBE1W7e_NpjauIoaHSI7if2FWwz0IXCbOioFhaqyeMfNlx7Cew1Wixe-XDpnXS&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfyQCw6rGTrrP1wu-ss0OfZ-qCRrEYwXPNczat_JZAFuug&oe=69B8ACCA",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650542144_933252232687078_2623456732848095276_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=qIYTLQlyLc4Q7kNvwHuYtgG&_nc_oc=AdmllKsXf-RpmaQMwReTBwXe3aQQw7xEuMeUcz-3Qgp-yPGSu9XWDxMxofZ74xOkjrl2fo8a4RP52F3bcPHaqQyO&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfwfOGK2WRuiuOnWoTYZJvsCs2M4q96w3p0pucxwDmd7Sw&oe=69B8A550",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651822709_933252286020406_5912969830352674801_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=ph3Q0D8a3pgQ7kNvwGWedPM&_nc_oc=AdmSbMMUKyPJMVCdOqSAcvXaxCrgyCgRdfij1_di1hQrQoKJtPYy0r6_j4JXpiPoUyerOHyj4KfcrX4rwn-gxMAR&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfxVzNRavFBeTavlPy0xV49DrsjgC1-q5CdxX3DWYW_Heg&oe=69B8AB5C"
+          ],
+          "imageCount": 6
+        },
+        {
+          "postId": "2217797409170565",
+          "url": "https://www.facebook.com/groups/chocudanvinhomeq9/posts/2217797409170565/",
+          "author": "Thanh Tuyền",
+          "timeText": "",
+          "content": "ú · Free ship vin, bânh mới bao mềm dẻo quẹo Bánh tráng 6 vị “thần thánh” chuyên mới, Ngon téc cái nách” chuyến mới sẵn #95kkk___95kkkk /set 10túi Xem thêm +3 dưới tên Thông",
+          "snippet": "ú · Free ship vin, bânh mới bao mềm dẻo quẹo Bánh tráng 6 vị “thần thánh” chuyên mới, Ngon téc cái nách” chuyến mới sẵn #95kkk___95kkkk /set 10túi Xem thêm +3 dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649327720_2650316762020049_30907596774850274_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=RuRW50-SVM0Q7kNvwGu99th&_nc_oc=AdkF145_NuaLPz1Q3IwSCh0nz435P6oBXQOOl2gu1K_ooJdHr4REI5ntsnNrIbrgwADhXiM2LX_MAS0FJ2JTmdqz&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfwMmF8nKcEdiFS1sbjXQfJvkfRKz4Z62eYt-uEIfJOp4g&oe=69B8A876",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650222896_2650316805353378_517905290630991392_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=LJIloHcyP_oQ7kNvwHZEgA7&_nc_oc=AdnrevYoxRicefdGX5NtVtI8azX_3Ba7X0f6OXd3z19LfADUlqnwP5R6w2yhg-pmWc_Gs63tzhyvOpSz_AmaowzW&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_Afze675M01SRl9SiCT-PP2KAUbhLYdUpGjUQABkTnkz-qg&oe=69B8BE19",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650302812_2650316845353374_142313920847568651_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=jM0UVP14zDcQ7kNvwGRILv2&_nc_oc=AdlcX0-HuoIib5EZwQLdZsTBDBCygNhNtvE7Q37Yb5Xn3wabxgmDCcL3E9edd9zpJpIoQLWN_6WqhUiAPSK4JhlC&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfyUsB7TPqmmOUehd8u1H3NcqoNkNmMuudQu9-fa9BqiEg&oe=69B8C154",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650520162_2650316885353370_5007876021174472863_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=102&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=BuEDnsEthG8Q7kNvwEYBo1p&_nc_oc=Adm2a3GyZNu25cfn3rjpReeVg2PfCjRe6d9Kihx7VMtJFQISjjLvIZcLcpDpcOaYPXAq8beBUvIWt3sgASnSjspH&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfyJFx8GCKyDF7XLRrS9qPC7PhB1a5O11Kojwbqyjd2vQg&oe=69B8CDA4",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649889287_2650316945353364_3928731200912501568_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=NpcB9wmh4P0Q7kNvwFl1RYC&_nc_oc=AdkdImPU32ejsuARTmfgkZXGE0wruEO9z3vZqKM3GgEb7bTJdvkcxbFy8oYAW0VlpOdstEYhnoOdzaxSEExCwbSd&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=uQv8cHG-2o7IzqWrwC0i8Q&_nc_ss=8&oh=00_AfwWkwe4_iBOHY0Po4zbt7U-HUAwwGUNWdli1qUfYb_UIw&oe=69B8D1E2"
+          ],
+          "imageCount": 5
+        }
+      ]
+    },
+    {
+      "success": true,
+      "groupId": "362900488947380",
+      "count": 2,
+      "posts": [
+        {
+          "postId": "122126609193035659",
+          "url": "https://www.facebook.com/groups/362900488947380/posts/122126609193035659/",
+          "author": "GoohTek - Giải Pháp Phần Mềm",
+          "timeText": "",
+          "content": "ờ i 8 u 3 i · GoohTek - Giải Pháp Phần Mềm Nhà thiết kế web Gửi tin nhắn GoohTek - Giải Pháp Phần Mềm · ờ i 8 u 3 i · THIẾT KẾ WEBSITE CHUYÊN NGHIỆP – CHUẨN SEO GOOGLE – TĂNG KHÁCH HÀNG ONLINE B… Xem thêm dưới tên Thông",
+          "snippet": "ờ i 8 u 3 i · GoohTek - Giải Pháp Phần Mềm Nhà thiết kế web Gửi tin nhắn GoohTek - Giải Pháp Phần Mềm · ờ i 8 u 3 i · THIẾT KẾ WEBSITE CHUYÊN NGHIỆP – CHUẨN SEO GOOGLE – TĂNG KHÁCH HÀNG ONLINE B… Xem thêm dưới tên Thông",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649739545_122126608875035659_5703469673969107789_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=0fVIxBHq6doQ7kNvwE-e6GW&_nc_oc=AdlD2OdSQsG9gqsrLKqPc5smUwUModjmSC8I8H5kPHfAlcO8-HnG-rPGfFOcTYA8d8FRgYsp532tmoHnD4iDgmVS&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=gwPZpcahffJa6W-XVT8yaQ&_nc_ss=8&oh=00_AfzKdk5qtcXb_zn9ywuZiP9YfLeWbD3ov_Jkj30UqtEG1g&oe=69B8C757",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649126432_122126608941035659_5631984451534646019_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=13d280&_nc_ohc=2lqeW_Rtc-MQ7kNvwHHr-VR&_nc_oc=AdnjuGBr-DiMP4CQ6Vixye1UmxdRGAUJsoX0VRswDHFiknGzp_swuHaUOAORAquJ0evrEJ9ImPpBqoCg8bYREJHX&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=gwPZpcahffJa6W-XVT8yaQ&_nc_ss=8&oh=00_AfzBOAprQKaM_YnRkjk1uCzNioNF523KQMxALa8xQO6rAw&oe=69B8CB7C",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651005092_122126608839035659_2027843095758120688_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=5kvWtwhGcI8Q7kNvwGge_f0&_nc_oc=Admmin-gZkTXrY5Ske4xItNbh5TZEmAQl6MLGErvwKi-fnCPVuZJnzscDbtvVs07K_HBnRMP6mi_P89DhLGygDTV&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=gwPZpcahffJa6W-XVT8yaQ&_nc_ss=8&oh=00_AfyKAFGmKymdTHnFtvuV0B3lmZMCvKPcolf8JJ2L5_ShBg&oe=69B8A318",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650779061_122126608785035659_8221765150818707171_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=107&ccb=1-7&_nc_sid=13d280&_nc_ohc=qro-rX6l2MoQ7kNvwHZdEB7&_nc_oc=AdmCdkunF2NIqSslEvETTusSCOhgEL2CCEWv8FQGdxCjXGLpJEyUEgl8D2wDhvpFHMOK3RTsh2RlKEjLaxR4xaF5&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=gwPZpcahffJa6W-XVT8yaQ&_nc_ss=8&oh=00_AfxyDZzVE-UP5uhp8D9HcC3esBXRpI-d1CNWYGC9L0A6qw&oe=69B8C19C",
+            "https://static.xx.fbcdn.net/images/emoji.php/v9/tc6/1/16/1f680.png"
+          ],
+          "imageCount": 5
+        },
+        {
+          "postId": "1413071097263642",
+          "url": "https://www.facebook.com/groups/362900488947380/posts/1413071097263642/",
+          "author": "Linh Hoàng",
+          "timeText": "6 giờ",
+          "content": "ờ · Anh chị ib Phương Nguyễn -0763233743 nha —— Cần gì để website nổi bật? Một website thu hút không chỉ nhờ giao diện đẹp mà còn phụ thuộc vào sự chuẩn bị trước khi thiết kế. Bạn cần xác định rõ mục tiêu làm website để làm gì, ai sẽ là người truy cập và họ cần thông tin gì. Đồng thời, nội dung, hình ảnh và phong cách ",
+          "snippet": "ờ · Anh chị ib Phương Nguyễn -0763233743 nha —— Cần gì để website nổi bật? Một website thu hút không chỉ nhờ giao diện đẹp mà còn phụ thuộc vào sự chuẩn bị trước khi thiết kế. Bạn cần xác định rõ mục tiêu làm website để làm gì, ai sẽ là người truy cập và họ cần thông tin gì. Đồng thời, nội dung, hình ảnh và phong cách ",
+          "imageUrls": [
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/651695922_950733534295632_1960494834732540894_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=-BqzA-LG30wQ7kNvwEpLtWP&_nc_oc=Adkim-OVTWd0PfXfbFPQVOlxr7efAyGrWMNVH4LOf8vbHhTSXGuiQNVP15iQx4HOAfHcFyZO6HDh4j-FHKpV8Q9h&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nQwZ2SA7CknqLWq5svqEmg&_nc_ss=8&oh=00_AfzUOP4utbkUxlkuFfpfBWguvqJzfgYGyb6yxdCKvdfs6Q&oe=69B8D491",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649595748_950733527628966_5670091571850152127_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=110&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=QyPrcYS_oYUQ7kNvwFW6q0m&_nc_oc=Adl1Cwm6IIiuVE5zKZutqWm4qAnRD38Kzxe6PxhbguKDHFLkTnJQnrLqMviJ42Z2Dj6wjkzZZyEYgd1_r3KIaCCy&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nQwZ2SA7CknqLWq5svqEmg&_nc_ss=8&oh=00_Afxfm_FBvmbDir3QjoOYEQPG_b6ixlcGHgMSaCo3mL4Fig&oe=69B8C139",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650101098_950733547628964_3463389267525046029_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=Tx5lHI1px-4Q7kNvwF6Gb61&_nc_oc=AdkQg5bsS18MXUlMBRP2daasFwEXxI_l4-bDwto1dNN2zoT-F4S8wygWA1943OSMcY_f8iH_GEZMhmNz8qotCgv6&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nQwZ2SA7CknqLWq5svqEmg&_nc_ss=8&oh=00_AfycAE9XS8wFMAgGJU1iUxdQL-ctEVHWU3VYgI3EzZ0ouA&oe=69B8B198",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/650683780_950733637628955_2953619976438288023_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=KygjvUpyicQQ7kNvwF4l2RC&_nc_oc=Adl3V1w9BJiPP0rgsa9oOdaN1FRfZMLtH02jIZ2gzs9O-0xQk4w3GrH-qkSvyFGz-rc9FfeRb5YYseE4MoTzGqVf&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nQwZ2SA7CknqLWq5svqEmg&_nc_ss=8&oh=00_AfxosqqQMrlx_Qja6M1VLKq2fqFib6E6AryE3OG0tBsbmQ&oe=69B8A331",
+            "https://scontent.fsgn18-1.fna.fbcdn.net/v/t39.30808-6/649657755_950733604295625_408799653479044266_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e06c5d&_nc_ohc=Pqjtv7Hcw-UQ7kNvwEDyrfz&_nc_oc=AdnlhCTqnTX2Y7yD7pmBk44hhLjkplso0TZ5hhRsmp_2aaTFNudBT4Xm-1CRLT3pFAc4MWjDwxDbnHJP94yjbTk8&_nc_zt=23&_nc_ht=scontent.fsgn18-1.fna&_nc_gid=nQwZ2SA7CknqLWq5svqEmg&_nc_ss=8&oh=00_Afz7xkmhLqVmv1MGdgeoHk9PvZsP7oguMF3HIi6ea0FmtA&oe=69B8A325"
+          ],
+          "imageCount": 5
+        }
+      ]
+    },
+    {
+      "success": false,
+      "groupId": "606643771643699",
+      "error": "0 posts after retry",
+      "count": 0,
+      "posts": []
+    },
+    {
+      "success": false,
+      "groupId": "1712169349298592",
+      "error": "0 posts after retry",
+      "count": 0,
+      "posts": []
+    }
+  ]
+}
