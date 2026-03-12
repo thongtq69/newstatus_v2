@@ -65,30 +65,51 @@ async function commentOnPost(context, postUrl, coreScript) {
   const page = await context.newPage();
   try {
     await page.goto(postUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
-    await sleep(3000);
+    await sleep(4000);
 
-    // Find the comment box — try multiple selectors
-    // On single-post view, the comment box is usually [role="textbox"] inside the comment section
-    const commentBox = page.locator('[role="textbox"][aria-label*="bình luận"], [role="textbox"][aria-label*="comment"], [role="textbox"][aria-label*="Viết"]').first();
-    
-    const boxCount = await commentBox.count();
-    if (boxCount === 0) {
-      log(`    ⚠️ No comment box found on ${postUrl}`);
+    // Strategy: scroll to bottom first, then find & force-click the comment button/box
+    await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+    await sleep(2000);
+
+    // FB comment flow: there's a "Viết bình luận" button (role=button). 
+    // Click it via JS to bypass overlay intercepts, which opens the actual textbox.
+    const clicked = await page.evaluate(() => {
+      // Find "Viết bình luận" button
+      const btns = document.querySelectorAll('[role="button"][aria-label*="bình luận"], [role="button"][aria-label*="Bình luận"]');
+      for (const btn of btns) {
+        btn.click();
+        return true;
+      }
+      return false;
+    });
+
+    if (!clicked) {
+      log(`    ⚠️ No comment button on ${postUrl}`);
       return false;
     }
 
-    await commentBox.click();
+    await sleep(2000);
+
+    // Now the actual textbox should appear — it's a contenteditable div with role="textbox"
+    // Type using keyboard (more reliable than execCommand on contenteditable)
+    const textbox = page.locator('[role="textbox"][contenteditable="true"]').last();
+    if (await textbox.count() === 0) {
+      log(`    ⚠️ Textbox didn't appear after clicking on ${postUrl}`);
+      return false;
+    }
+
+    await textbox.click({ force: true });
     await sleep(500);
 
-    // Use execCommand insertText for reliable Unicode input
+    // Type via execCommand
     await page.evaluate((text) => {
       document.execCommand('insertText', false, text);
     }, COMMENT_TEXT);
-    await sleep(500);
+    await sleep(1000);
 
-    // Press Enter to submit
-    await commentBox.press('Enter');
-    await sleep(3000);
+    // Submit with Enter
+    await page.keyboard.press('Enter');
+    await sleep(4000);
 
     log(`    💬 Commented on ${postUrl}`);
     return true;
@@ -204,10 +225,8 @@ async function runCycle(context, coreScript, cycleNum, commentedPosts) {
       const ok = await commentOnPost(context, postUrl, coreScript);
       if (ok) {
         commentedPosts.add(post.postId);
-      } else {
-        // Still mark as seen so we don't retry endlessly
-        commentedPosts.add(post.postId);
       }
+      // Don't mark failed ones — retry next cycle
       // Small delay between comments to avoid spam detection
       await sleep(3000);
     }
