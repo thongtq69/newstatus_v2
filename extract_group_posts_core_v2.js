@@ -37,6 +37,15 @@
         return null;
       }
 
+      function hrefMatchesGroup(href) {
+        if (!href) return false;
+        const cleaned = cleanUrl(href);
+        const m = cleaned.match(/\/groups\/([^/?#]+)/i) || cleaned.match(/[?&]idorvanity=([^&#]+)/i);
+        if (!m) return false;
+        const gid = decodeURIComponent(m[1] || '').trim().toLowerCase();
+        return !!gid && gid === String(groupId).trim().toLowerCase();
+      }
+
       function buildCanonicalPostUrl(href, postId) {
         if (!postId) return '';
         let gid = groupId;
@@ -49,32 +58,26 @@
       }
 
       function findAuthor(node) {
-        // Check for anonymous post first
         const fullText = normalizeText(node.innerText || node.textContent || '');
         if (/Người tham gia ẩn danh/i.test(fullText)) {
-          // Only return anonymous if it appears BEFORE the first comment section
           const commentSection = node.querySelector('[aria-label*="bình luận"], [aria-label*="comment"]');
           const anonSpans = [...node.querySelectorAll('span')].filter(s =>
             /Người tham gia ẩn danh/i.test(s.textContent)
           );
           if (anonSpans.length > 0) {
             const anonEl = anonSpans[0];
-            // If no comment section, or anon appears before it in DOM order
             if (!commentSection || (anonEl.compareDocumentPosition(commentSection) & Node.DOCUMENT_POSITION_FOLLOWING)) {
               return 'Người tham gia ẩn danh';
             }
           }
         }
 
-        // Find author link — but only from the TOP portion of the card (before comments)
-        // Strategy: get all links, but stop once we hit comment-like patterns
         const links = [...node.querySelectorAll('a[href]')];
         for (const a of links) {
           const href = a.getAttribute('href') || '';
           const txt = normalizeText(a.textContent);
           if (!txt || txt.length < 2 || txt.length > 80) continue;
           if (/^Facebook$/i.test(txt)) continue;
-          // Skip if this link is inside a comment reply area
           const parent = a.closest('[role="article"]');
           if (parent && parent !== node && node.contains(parent)) continue;
           if (href.includes('/user/') || /^\/?(profile\.php|[A-Za-z0-9.]+)(\?|$)/.test(href)) return txt;
@@ -190,7 +193,7 @@
           text === 'Facebook';
       }
 
-      function candidateFromItem(item) {
+      function buildCandidate(item) {
         const rect = item.getBoundingClientRect();
         const viewportH = window.innerHeight;
         const visiblePx = Math.max(0, Math.min(rect.bottom, viewportH) - Math.max(rect.top, 0));
@@ -213,13 +216,14 @@
         for (const href of hrefs) {
           const pid = postIdFromHref(href);
           if (!pid) continue;
+          if (!hrefMatchesGroup(href)) continue;
           postId = pid;
           chosenHref = href;
           break;
         }
 
         if (!postId) {
-          const deeper = hrefs.find(href => href.includes('/photo/?') || href.includes('comment_id='));
+          const deeper = hrefs.find(href => (href.includes('/photo/?') || href.includes('comment_id=')) && hrefMatchesGroup(href));
           const pid = postIdFromHref(deeper || '');
           if (pid) {
             postId = pid;
@@ -239,6 +243,7 @@
         if (!author && !content) return null;
 
         return {
+          item,
           postId: postId || null,
           url,
           author,
@@ -252,15 +257,73 @@
           top: rect.top,
           bottom: rect.bottom,
           visiblePx,
-          scrollY: window.scrollY
+          scrollY: window.scrollY,
+          timeAnchorEl: headerTimeAnchor ? headerTimeAnchor.el : null
         };
       }
 
-      function collectVisiblePosts() {
-        return getFeedItems()
-          .map(candidateFromItem)
+      async function tryResolvePostIdViaInteraction(candidate) {
+        if (!candidate || candidate.postId || !candidate.item || !candidate.timeAnchorEl) return candidate;
+        const target = candidate.timeAnchorEl;
+        const wrappers = [
+          target,
+          target.parentElement,
+          target.parentElement && target.parentElement.parentElement,
+          target.closest('div')
+        ].filter(Boolean);
+
+        for (const el of wrappers) {
+          try { el.scrollIntoView({ block: 'center', inline: 'center' }); } catch {}
+          await sleep(180);
+          try { el.focus && el.focus(); } catch {}
+
+          const r = el.getBoundingClientRect();
+          const cx = Math.floor(r.left + Math.min(r.width - 2, Math.max(2, r.width / 2)));
+          const cy = Math.floor(r.top + Math.min(r.height - 2, Math.max(2, r.height / 2)));
+
+          for (const type of ['pointerover', 'pointerdown', 'mousedown', 'pointerup', 'mouseup', 'click']) {
+            try {
+              if (type.startsWith('pointer')) {
+                el.dispatchEvent(new PointerEvent(type, { bubbles: true, cancelable: true, pointerType: 'mouse', button: 0, clientX: cx, clientY: cy }));
+              } else {
+                el.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window, button: 0, clientX: cx, clientY: cy }));
+              }
+            } catch {}
+          }
+          try { el.dispatchEvent(new KeyboardEvent('keydown', { bubbles: true, key: 'Enter', code: 'Enter' })); } catch {}
+          try { el.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true, key: 'Enter', code: 'Enter' })); } catch {}
+          await sleep(650);
+
+          const hrefs = [...candidate.item.querySelectorAll('a[href]')]
+            .map(a => a.href || a.getAttribute('href') || '')
+            .filter(Boolean);
+          for (const href of hrefs) {
+            const pid = postIdFromHref(href);
+            if (!pid) continue;
+            if (!hrefMatchesGroup(href)) continue;
+            candidate.postId = pid;
+            candidate.url = cleanUrl(buildCanonicalPostUrl(href, pid) || href);
+            candidate.interactionResolved = true;
+            return candidate;
+          }
+        }
+
+        return candidate;
+      }
+
+      async function collectVisiblePosts() {
+        const built = getFeedItems()
+          .map(buildCandidate)
           .filter(Boolean)
           .sort((a, b) => a.top - b.top);
+
+        for (const candidate of built) {
+          if (!candidate.postId && candidate.timeAnchorEl) {
+            await tryResolvePostIdViaInteraction(candidate);
+          }
+        }
+
+        return built;
       }
 
       window.scrollTo(0, 0);
@@ -281,7 +344,7 @@
       let firstSeenSeq = 0;
 
       for (let step = 0; step < 12; step++) {
-        const visiblePosts = collectVisiblePosts();
+        const visiblePosts = await collectVisiblePosts();
         const before = byId.size;
 
         for (const post of visiblePosts) {
@@ -298,7 +361,8 @@
           scrollY: window.scrollY,
           visibleCount: visiblePosts.length,
           visiblePostIds: visiblePosts.filter(p => p.postId).map(p => p.postId),
-          visibleUnresolved: visiblePosts.filter(p => !p.postId).map(p => ({ author: p.author, timeText: p.timeText, headerTimeHref: p.headerTimeHref }))
+          visibleUnresolved: visiblePosts.filter(p => !p.postId).map(p => ({ author: p.author, timeText: p.timeText, headerTimeHref: p.headerTimeHref })),
+          interactionResolvedIds: visiblePosts.filter(p => p.interactionResolved).map(p => p.postId)
         });
 
         if (byId.size >= limit) break;
@@ -317,16 +381,16 @@
       const posts = [...byId.values()]
         .sort((a, b) => a.firstSeenSeq - b.firstSeenSeq)
         .slice(0, limit)
-        .map(({ top, bottom, visiblePx, scrollY, firstSeenSeq, ...post }) => post);
+        .map(({ item, timeAnchorEl, top, bottom, visiblePx, scrollY, firstSeenSeq, ...post }) => post);
 
       const unresolvedCards = [...unresolved.values()]
         .sort((a, b) => a.firstSeenSeq - b.firstSeenSeq)
         .slice(0, limit)
-        .map(({ top, bottom, visiblePx, scrollY, firstSeenSeq, ...post }) => post);
+        .map(({ item, timeAnchorEl, top, bottom, visiblePx, scrollY, firstSeenSeq, ...post }) => post);
 
       return {
         ok: true,
-        mode: 'hybrid-anchor-share-time',
+        mode: 'hybrid-anchor-share-time-interaction-v2',
         groupId,
         count: posts.length,
         posts,
