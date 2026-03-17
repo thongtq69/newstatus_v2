@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
 const ROOT = __dirname;
 const PROFILE_DIR = path.join(ROOT, '.pw-facebook-profile');
 const STATE_FILE = path.join(ROOT, '.pw-facebook-storage.json');
-const CORE_EXTRACTOR_FILE = path.join(ROOT, 'extract_group_posts_core.js');
+const CORE_EXTRACTOR_FILE = path.join(ROOT, 'extract_group_posts_core_v2.js');
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -32,6 +32,7 @@ async function cmdLogin() {
   await page.goto('https://www.facebook.com/', { waitUntil: 'domcontentloaded' });
   console.log('LOGIN_MODE_OPEN');
   console.log('Please log into Facebook in the opened Playwright window.');
+  console.log('This v1 entrypoint now runs on V2 extractor logic.');
   console.log('After login is complete and feed is visible, press Ctrl+C to stop this command.');
 
   const interval = setInterval(async () => {
@@ -55,7 +56,7 @@ async function cmdLogin() {
 
 async function cmdStatus() {
   const exists = fs.existsSync(STATE_FILE) || fs.existsSync(PROFILE_DIR);
-  console.log(JSON.stringify({ success: true, hasProfile: exists, profileDir: PROFILE_DIR, stateFile: STATE_FILE }, null, 2));
+  console.log(JSON.stringify({ success: true, hasProfile: exists, profileDir: PROFILE_DIR, stateFile: STATE_FILE, coreExtractor: CORE_EXTRACTOR_FILE, logic: 'v2-via-v1-entrypoint' }, null, 2));
 }
 
 async function extractPosts(page, groupId, limit = 5) {
@@ -64,11 +65,11 @@ async function extractPosts(page, groupId, limit = 5) {
   await page.evaluate(coreScript);
   const result = await page.evaluate(async ({ groupId, limit }) => {
     if (typeof window.__fbGroupExtractor !== 'function') {
-      throw new Error('Core extractor is not installed on page');
+      throw new Error('Core extractor V2 is not installed on page');
     }
     return await window.__fbGroupExtractor({ groupId, limit });
   }, { groupId, limit });
-  return result.posts || [];
+  return result;
 }
 
 async function cmdScrape(groupUrl, limit = 5) {
@@ -86,58 +87,9 @@ async function cmdScrape(groupUrl, limit = 5) {
 
   const m = groupUrl.match(/\/groups\/([^/?#]+)/i);
   const groupId = m ? m[1] : '';
-  const posts = await extractPosts(page, groupId, limit);
+  const result = await extractPosts(page, groupId, limit);
   await saveState(context);
-  console.log(JSON.stringify({ success: true, groupUrl, count: posts.length, posts }, null, 2));
-  await context.close();
-}
-
-async function scrapeOneTab(context, groupUrl, limit, coreScript) {
-  const page = await context.newPage();
-  const m = groupUrl.match(/\/groups\/([^/?#]+)/i);
-  const groupId = m ? m[1] : '';
-  try {
-    await page.goto(groupUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await sleep(4000);
-
-    const hasLoginForm = await page.locator('input[name="email"]').count();
-    if (hasLoginForm) {
-      return { success: false, groupUrl, groupId, error: 'Not logged in' };
-    }
-
-    await page.evaluate(coreScript);
-    const result = await page.evaluate(async ({ groupId, limit }) => {
-      return await window.__fbGroupExtractor({ groupId, limit });
-    }, { groupId, limit });
-
-    return { success: true, groupUrl, groupId, count: (result.posts || []).length, posts: result.posts || [] };
-  } catch (err) {
-    return { success: false, groupUrl, groupId, error: err.message };
-  } finally {
-    await page.close().catch(() => {});
-  }
-}
-
-async function cmdScrapeMulti(groupUrls, limit = 5, concurrency = 5) {
-  const context = await launchPersistent(false);
-  const coreScript = fs.readFileSync(CORE_EXTRACTOR_FILE, 'utf8');
-
-  // Process in batches to avoid overwhelming the browser
-  const results = [];
-  for (let i = 0; i < groupUrls.length; i += concurrency) {
-    const batch = groupUrls.slice(i, i + concurrency);
-    const batchResults = await Promise.all(
-      batch.map(url => scrapeOneTab(context, url, limit, coreScript))
-    );
-    results.push(...batchResults);
-    // Small pause between batches
-    if (i + concurrency < groupUrls.length) await sleep(2000);
-  }
-
-  await saveState(context);
-  const succeeded = results.filter(r => r.success).length;
-  const failed = results.filter(r => !r.success).length;
-  console.log(JSON.stringify({ success: true, total: results.length, succeeded, failed, results }, null, 2));
+  console.log(JSON.stringify({ success: true, groupUrl, groupId, mode: result.mode, count: (result.posts || []).length, unresolvedCount: result.unresolvedCount || 0, posts: result.posts || [], unresolvedCards: result.unresolvedCards || [], debug: result.debug || {} }, null, 2));
   await context.close();
 }
 
@@ -151,14 +103,5 @@ async function cmdScrapeMulti(groupUrls, limit = 5, concurrency = 5) {
     if (!url) throw new Error('Usage: node fb-playwright-monitor.js scrape <groupUrl> [limit]');
     return cmdScrape(url, limit);
   }
-  if (cmd === 'scrape-multi') {
-    // Usage: node fb-playwright-monitor.js scrape-multi <url1,url2,...> [limit] [concurrency]
-    const urlsArg = process.argv[3];
-    const limit = Number(process.argv[4] || '5');
-    const concurrency = Number(process.argv[5] || '5');
-    if (!urlsArg) throw new Error('Usage: node fb-playwright-monitor.js scrape-multi <url1,url2,...> [limit] [concurrency]');
-    const groupUrls = urlsArg.split(',').map(u => u.trim()).filter(Boolean);
-    return cmdScrapeMulti(groupUrls, limit, concurrency);
-  }
-  console.log('Usage: node fb-playwright-monitor.js <login|status|scrape|scrape-multi>');
+  console.log('Usage: node fb-playwright-monitor.js <login|status|scrape>');
 })();
