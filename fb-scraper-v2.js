@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { chromium } = require('playwright');
 const readline = require('readline');
+const { mergeScrapeSummary } = require('./post-store');
 
 const ROOT = __dirname;
 const PROFILE_DIR = path.join(ROOT, '.pw-facebook-profile-v2');
@@ -222,6 +223,8 @@ async function runCycle(context, pages, coreScript, cycleNum) {
     results
   };
   fs.writeFileSync(path.join(RESULTS_DIR, 'latest-v2.json'), JSON.stringify(summary, null, 2), 'utf8');
+  const mergeInfo = mergeScrapeSummary(summary);
+  log(`🗂️ Posts DB merged: touched=${mergeInfo.touched} | totalPosts=${mergeInfo.totalPosts} | groups=${mergeInfo.groups}`);
   log(`━━━ V2 CYCLE #${cycleNum} DONE: ${succeeded}/${results.length} groups OK ━━━`);
 }
 
