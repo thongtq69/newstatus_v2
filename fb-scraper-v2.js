@@ -127,23 +127,51 @@ async function scrapeGroup(page, groupId, coreScript, context, keepPages = []) {
   }
 }
 
-async function runBatch(context, pages, coreScript, cycleNum, batchNum, groupBatch) {
-  log(`  ▶ Batch ${batchNum}: ${groupBatch.join(', ')}`);
+async function runBatch(context, pages, coreScript, cycleNum, batchNum, groupBatch, options = {}) {
+  const { isRetryBatch = false } = options;
+  log(`  ▶ ${isRetryBatch ? 'Retry batch' : `Batch ${batchNum}`}: ${groupBatch.join(', ')}`);
   const keepPages = pages.filter(Boolean);
   const jobs = groupBatch.map(async (gid, index) => {
     const page = pages[index];
     if (!page) {
-      return { success: false, groupId: gid, count: 0, posts: [], unresolvedCards: [], error: 'No page assigned' };
+      return {
+        success: false,
+        groupId: gid,
+        count: 0,
+        posts: [],
+        unresolvedCards: [],
+        error: 'No page assigned',
+        retryEligible: false,
+        retried: isRetryBatch,
+      };
     }
 
     const r = await scrapeGroup(page, gid, coreScript, context, keepPages);
     if (r.success) {
-      log(`    ✅ ${r.groupId}: ${r.count} bài | unresolved=${r.unresolvedCount || 0}`);
-      return r;
+      log(`    ✅ ${r.groupId}: ${r.count} bài | unresolved=${r.unresolvedCount || 0}${isRetryBatch ? ' | retry-ok' : ''}`);
+      return { ...r, retryEligible: false, retried: isRetryBatch };
     }
 
-    log(`    ⚠️ ${gid}: ${r.error || '0 posts'} — defer retry to next cycle`);
-    return { success: false, groupId: gid, count: 0, posts: [], unresolvedCards: [], error: r.error || '0 posts' };
+    const error = r.error || '0 posts';
+    const retryEligible = error === '0 posts';
+    if (isRetryBatch) {
+      log(`    ⚠️ ${gid}: ${error} — retry exhausted`);
+    } else if (retryEligible) {
+      log(`    ⚠️ ${gid}: ${error} — queue retry after all batches`);
+    } else {
+      log(`    ⚠️ ${gid}: ${error} — defer retry to next cycle`);
+    }
+
+    return {
+      success: false,
+      groupId: gid,
+      count: 0,
+      posts: [],
+      unresolvedCards: [],
+      error,
+      retryEligible,
+      retried: isRetryBatch,
+    };
   });
 
   return await Promise.all(jobs);
@@ -163,6 +191,21 @@ async function runCycle(context, pages, coreScript, cycleNum) {
     if (i < batches.length - 1) {
       log('  ⏳ Cooldown giữa 2 batch...');
       await sleep(2500);
+    }
+  }
+
+  const retryGroups = [];
+  for (const r of results) {
+    if (r && !r.success && r.retryEligible) retryGroups.push(r.groupId);
+  }
+
+  if (retryGroups.length > 0) {
+    log(`  🔁 Final retry pass for 0-post groups: ${retryGroups.join(', ')}`);
+    const retryResults = await runBatch(context, pages, coreScript, cycleNum, 'retry', retryGroups, { isRetryBatch: true });
+    const retryMap = new Map(retryResults.map(r => [r.groupId, r]));
+    for (let i = 0; i < results.length; i++) {
+      const gid = results[i]?.groupId;
+      if (retryMap.has(gid)) results[i] = retryMap.get(gid);
     }
   }
 
