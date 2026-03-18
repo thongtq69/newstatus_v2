@@ -256,41 +256,93 @@ function syncLegacyTracking(postId, status) {
 async function verifyCommentResult(page, commentText, actionType = '') {
   const { normalized: expectedCommentNorm, signatures } = buildCommentSignatures(commentText);
   return await page.evaluate(({ expectedCommentNorm, signatures, actionType }) => {
+    const normalize = value => (value || '').toString().toLowerCase().replace(/\s+/g, ' ').trim();
     const tb = document.querySelector('[role="textbox"][contenteditable="true"]');
-    const pageText = (document.body ? document.body.innerText : '').replace(/\s+/g, ' ');
-    const pageTextNorm = pageText.toLowerCase().replace(/\s+/g, ' ').trim();
+    const pageTextRaw = document.body ? document.body.innerText : '';
+    const pageText = pageTextRaw.replace(/\s+/g, ' ');
+    const pageTextNorm = normalize(pageText);
     const textboxTextAfter = tb ? (tb.textContent || '') : '';
     const textboxEmpty = textboxTextAfter === '';
     const hasRejected = /Bị từ chối/i.test(pageText);
     const hasPending = /Đang chờ/i.test(pageText);
-    const hasCommenterLabel = /Người bình luận:/i.test(pageText);
     const hasSentMarker = /Đã gửi bình luận của bạn/i.test(pageText);
-    const hasLikeReplyShareSequence = /Thích\s+Trả lời\s+Chia sẻ/i.test(pageText) || /Thích\s+Trả lời/i.test(pageText);
-    const ownMatches = pageText.match(/(?:Tám Lê|WinterFrost)[^\n]{0,420}/gi) || [];
-    const normalizedMatches = ownMatches.map(s => s.toLowerCase().replace(/\s+/g, ' ').trim());
-    const matchedOwnComment = normalizedMatches.find(s => s.includes(expectedCommentNorm)) || null;
-    const matchedSignature = signatures.find(sig => pageTextNorm.includes(sig.toLowerCase())) || null;
-    const hasWinterFrost = /WinterFrost/i.test(pageText);
-    const hasOwnComment = !!matchedOwnComment || !!matchedSignature || hasWinterFrost;
+
+    const candidateEls = Array.from(document.querySelectorAll('div, li, ul, article, span'));
+    let matchedElement = null;
+    let matchedElementText = '';
+    let matchedSignature = null;
+
+    for (const el of candidateEls) {
+      const raw = (el.innerText || el.textContent || '').trim();
+      if (!raw) continue;
+      if (raw.length < 20 || raw.length > 2500) continue;
+      const norm = normalize(raw);
+      const sig = signatures.find(s => norm.includes(normalize(s)));
+      const matchesComment = expectedCommentNorm && norm.includes(expectedCommentNorm);
+      const mentionsIdentity = /winterfrost|tám lê/i.test(raw);
+      if ((matchesComment || sig) && mentionsIdentity) {
+        matchedElement = el;
+        matchedElementText = raw;
+        matchedSignature = sig || null;
+        break;
+      }
+    }
+
+    let localBlockText = '';
+    if (matchedElement) {
+      let node = matchedElement;
+      for (let i = 0; i < 6 && node; i += 1) {
+        const raw = (node.innerText || node.textContent || '').trim();
+        const norm = normalize(raw);
+        if (raw && raw.length >= 20 && raw.length <= 2500 && (norm.includes(expectedCommentNorm) || (matchedSignature && norm.includes(normalize(matchedSignature))))) {
+          localBlockText = raw;
+          if (/Người bình luận:|Đang chờ|Thích|Trả lời|Chia sẻ|Vừa xong|\d+\s*(phút|giờ|ngày)/i.test(raw)) break;
+        }
+        node = node.parentElement;
+      }
+      if (!localBlockText) localBlockText = matchedElementText;
+    }
+
+    const localNorm = normalize(localBlockText);
+    const localHasOwnComment = !!localNorm && (localNorm.includes(expectedCommentNorm) || !!matchedSignature || /winterfrost/i.test(localBlockText));
+    const localHasPending = /Đang chờ/i.test(localBlockText);
+    const localHasRejected = /Bị từ chối/i.test(localBlockText);
+    const localHasCommenterLabel = /Người bình luận:/i.test(localBlockText);
+    const localHasLike = /\bThích\b/i.test(localBlockText);
+    const localHasReply = /Trả lời/i.test(localBlockText);
+    const localHasShare = /Chia sẻ/i.test(localBlockText);
+    const localHasLikeReply = localHasLike && localHasReply;
+    const localHasTime = /Vừa xong|\d+\s*(phút|giờ|ngày|tuần|tháng)/i.test(localBlockText);
+    const hasWinterFrost = /WinterFrost/i.test(localBlockText || pageText);
     const confirmByMarker = textboxEmpty && hasSentMarker && !hasRejected;
-    const confirmByContent = textboxEmpty && hasOwnComment && !hasRejected;
-    const liveInteractionReady = hasLikeReplyShareSequence && !hasPending && !hasRejected;
+    const confirmByContent = textboxEmpty && localHasOwnComment && !localHasRejected;
+    const liveInteractionReady = localHasOwnComment && localHasTime && localHasLikeReply && !localHasPending && !localHasRejected;
+
     return {
       actionType,
       textboxEmpty,
       hasRejected,
       hasPending,
-      hasCommenterLabel,
-      hasOwnComment,
       hasSentMarker,
       hasWinterFrost,
-      hasLikeReplyShareSequence,
+      hasOwnComment: localHasOwnComment,
+      hasCommenterLabel: localHasCommenterLabel,
+      hasLikeReplyShareSequence: localHasLikeReply,
       liveInteractionReady,
-      matchedOwnComment,
+      matchedOwnComment: localHasOwnComment ? localBlockText.slice(0, 1200) : null,
       matchedSignature,
       confirmByMarker,
       confirmByContent,
-      ownMatches: ownMatches.slice(0, 5)
+      localBlockFound: !!localBlockText,
+      localHasPending,
+      localHasRejected,
+      localHasCommenterLabel,
+      localHasTime,
+      localHasLike,
+      localHasReply,
+      localHasShare,
+      localBlockText: localBlockText ? localBlockText.slice(0, 1600) : null,
+      ownMatches: (pageText.match(/(?:Tám Lê|WinterFrost)[^\n]{0,420}/gi) || []).slice(0, 5)
     };
   }, { expectedCommentNorm, signatures, actionType: actionType || '' });
 }
@@ -324,11 +376,11 @@ async function submitCommentText(page, commentText, postUrl) {
     log(`  ⏳ PENDING_REVIEW: ${postUrl}`);
     return { status: 'pending_review', ok: false, commentText, verify, actionType: actionType || null };
   }
-  if ((verify.confirmByMarker || verify.confirmByContent) && verify.liveInteractionReady) {
+  if (verify.localBlockFound && (verify.confirmByMarker || verify.confirmByContent) && verify.liveInteractionReady) {
     log(`  💬 SENT_CONFIRMED: ${postUrl}`);
     return { status: 'sent_confirmed', ok: true, commentText, verify, actionType: actionType || null };
   }
-  if (verify.textboxEmpty && !verify.hasRejected) {
+  if ((verify.textboxEmpty && verify.localBlockFound && !verify.liveInteractionReady && !verify.localHasPending && !verify.localHasRejected) || (verify.textboxEmpty && !verify.hasRejected)) {
     log(`  ⚠️ SUBMITTED_UNCONFIRMED: ${postUrl}`);
     return { status: 'submitted_unconfirmed', ok: false, commentText, verify, actionType: actionType || null };
   }
