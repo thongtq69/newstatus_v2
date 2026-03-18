@@ -414,7 +414,11 @@ async function commentOnPost(page, post) {
 
     let result = await submitCommentText(page, commentText, postUrl);
 
-    if (result.status === 'pending_review' && !chosen.stripLink && /winterfrost\.tech/i.test(commentText)) {
+    const shouldRetryWithoutLink = !chosen.stripLink
+      && /winterfrost\.tech/i.test(commentText)
+      && (result.status === 'pending_review' || result.status === 'submitted_unconfirmed');
+
+    if (shouldRetryWithoutLink) {
       const noLinkText = stripLinkFromComment(commentText);
       log(`  ↩️ Retry without link for group ${post.groupId}: ${postUrl}`);
       rememberGroupStripLink(post.groupId, {
@@ -424,7 +428,11 @@ async function commentOnPost(page, post) {
         fromStatus: result.status,
         matchedSignature: result.verify?.matchedSignature || null,
         hasCommenterLabel: result.verify?.hasCommenterLabel || false,
-        hasPending: result.verify?.hasPending || false
+        hasPending: result.verify?.hasPending || false,
+        localBlockFound: result.verify?.localBlockFound || false,
+        localHasTime: result.verify?.localHasTime || false,
+        localHasLike: result.verify?.localHasLike || false,
+        localHasReply: result.verify?.localHasReply || false
       });
       await page.waitForTimeout(2000);
       result = await submitCommentText(page, noLinkText, postUrl);
